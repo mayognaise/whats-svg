@@ -47,7 +47,7 @@
 
 # OS or Editor folders #
 ########################
-.DS_Store*
+# .DS_Store*
 Icon?
 ehthumbs.db
 Thumbs.db
