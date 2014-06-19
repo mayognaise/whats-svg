@@ -307,27 +307,20 @@
 			<text transform="matrix(1 0 0 1 880.125 2996.998)" opacity="0.2" fill="#FFFFFF" font-family="'OpenSansLight-Italic'" font-size="9">900</text>
 	</g>
 </g>
-<g id="temp" display="none">
-	<g display="inline">
-		<defs>
-			<polygon id="SVGID_1_" points="900,675 0,225 0,675 899.651,225 			"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  overflow="visible"/>
-		</clipPath>
-		<g clip-path="url(#SVGID_2_)">
-			<image overflow="visible" width="560" height="560" xlink:href="pattern.png"  transform="matrix(1 0 0 1 170 170)">
-			</image>
-		</g>
-	</g>
-	<polygon display="inline" opacity="0.2" fill="#00A99D" points="50,850 50,949.959 900,1375 900,1275 	"/>
-</g>
 <g id="obj">
 	<g id="noPointEvent" opacity="0.2">
-		<path fill="none" stroke="#FFFF00" stroke-miterlimit="10" d="M850,450c0-64.428-15.238-125.294-42.297-179.202L449.506,449.941
-			l358.282,179.091C834.795,575.167,850,514.36,850,450z"/>
-		<path fill="none" stroke="#FFFF00" stroke-miterlimit="10" d="M92.061,271.268C65.148,325.059,50,385.76,50,450
-			c0,64.233,15.145,124.927,42.051,178.713l357.456-178.772L92.061,271.268z"/>
+		<polyline stroke="#FFFF00" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2,2" points="749,1700 749,2100 599,2025 
+			599,1625 		"/>
+		<path id="radiationRight" fill="none" stroke="#FFFF00" stroke-miterlimit="10" d="M850,450
+			c0-64.428-15.238-125.294-42.297-179.202L649.5,349.919L449.506,449.941L649.5,549.909l158.288,79.123
+			C834.795,575.167,850,514.36,850,450z"/>
+		<path id="radiationLeft" fill="none" stroke="#FFFF00" stroke-miterlimit="10" d="M92.061,271.268
+			C65.148,325.059,50,385.76,50,450c0,64.233,15.145,124.927,42.051,178.713L250,550l199.506-100.059l-199.982-99.963
+			L92.061,271.268z"/>
+		<g>
+			<path fill="none" stroke="#FFFF00" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2,2" d="M50,1500
+				c0,27.614,22.386,50,50,50h200c27.614,0,50-22.386,50-50v-200c0-27.614-22.386-50-50-50H100c-27.614,0-50,22.386-50,50V1500z"/>
+		</g>
 		<polyline fill="none" stroke="#FFFF00" stroke-miterlimit="10" points="650,550 850,450 650,350 		"/>
 		<polyline fill="none" stroke="#FFFF00" stroke-miterlimit="10" points="250,550 51,450 250.5,350 		"/>
 		<line fill="none" stroke="#FFFF00" stroke-miterlimit="10" x1="750" y1="1400" x2="0" y2="1775"/>
@@ -344,27 +337,34 @@
 				<ellipse fill="none" stroke="#FFFF00" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2,2" cx="650" cy="1300" rx="60" ry="30"/>
 		</g>
 		<g>
-			<line fill="none" stroke="#FFFF00" stroke-miterlimit="10" x1="732.423" y1="1691.711" x2="449.577" y2="1550.289"/>
-			<g id="hole_2_">
-				<path fill="none" stroke="#FFFF00" stroke-miterlimit="10" d="M791,1621c0,55.23-89.538,100-200,100
-					c-110.455,0-200-44.77-200-100s89.545-100,200-100C701.462,1521,791,1565.77,791,1621z"/>
-			</g>
+			<line fill="none" stroke="#FFFF00" stroke-miterlimit="10" x1="751.377" y1="1701.187" x2="449.577" y2="1550.289"/>
+			<line fill="none" stroke="#FFFF00" stroke-miterlimit="10" x1="449.577" y1="1701.187" x2="751.377" y2="1550.289"/>
+			<path fill="none" stroke="#FFFF00" stroke-miterlimit="10" d="M813.877,1625.738c0,58.932-95.537,106.701-213.4,106.701
+				c-117.857,0-213.402-47.77-213.402-106.701s95.545-106.701,213.402-106.701C718.34,1519.037,813.877,1566.807,813.877,1625.738z"
+				/>
+			<path id="ballAnimeGuideRotation" display="none" fill="none" stroke="#00FFFF" stroke-miterlimit="10" d="M450.029,1550.064
+				c38.581-19.179,91.747-31.027,150.448-31.027c117.863,0,213.4,47.77,213.4,106.701s-95.537,106.701-213.4,106.701
+				c-117.857,0-213.402-47.77-213.402-106.701c0-29.352,23.702-55.933,62.056-75.225"/>
+			<path id="ballAnimeGuideWalk" display="none" fill="none" stroke="#00FFFF" stroke-miterlimit="10" d="M750,525.124L99.5,850.25
+				l0.003,49.502L600,1150c33.5,17.5,49.5,50,49.5,80v220l-199.75,100"/>
 		</g>
+		<path fill="none" stroke="#00FFFF" stroke-miterlimit="10" d="M0,875"/>
+		<path fill="none" stroke="#00FFFF" stroke-miterlimit="10" d="M99.5,940"/>
 	</g>
-	<polygon opacity="0.2" fill="#00A99D" points="850,1250 50,850 50,949.959 750.024,1300 	"/>
-	<polygon opacity="0.5" points="50,949.972 550,700 350,700 50,850.019 	"/>
+	<polygon opacity="0.2" fill="#00A99D" points="850,1250 50,850 50,950 750.024,1300 	"/>
+	<polygon opacity="0.5" points="50,950 550,700 350,700 50,850.019 	"/>
 	<g opacity="0.6">
 		<rect x="350" y="500" fill="#00A99D" width="200" height="200"/>
 	</g>
 	<g>
 		<defs>
-			<polygon id="SVGID_3_" points="0,0 0,225 449.913,449.957 900,225 900,0 			"/>
+			<polygon id="SVGID_1_" points="0,0 0,225 449.913,449.957 900,225 900,0 			"/>
 		</defs>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
 		</clipPath>
-		<polygon clip-path="url(#SVGID_4_)" fill="#00A99D" points="450,450 449.917,449.958 449.833,450 		"/>
-		<g clip-path="url(#SVGID_4_)">
+		<polygon clip-path="url(#SVGID_2_)" fill="#00A99D" points="450,450 449.917,449.958 449.833,450 		"/>
+		<g clip-path="url(#SVGID_2_)">
 			<circle cx="450" cy="450" r="112"/>
 		</g>
 	</g>
@@ -382,50 +382,107 @@
 		<line fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="350" y1="800" x2="350" y2="1000"/>
 	<g>
 		<defs>
-			<path id="SVGID_5_" d="M190.98,879.74L550,700V501L50,751.019v181.44l540.739,270.146c1.938,11.261,16.555,20.744,36.47,24.996
-				c0.027,0.006,0.179,0.013,0.206,0.019c0.84,0.178,1.753,0.346,2.612,0.506c0.064,0.012,0.157,0.025,0.222,0.037
-				c0.814,0.149,1.655,0.288,2.485,0.42c0.112,0.019,0.229,0.039,0.342,0.057c0.771,0.121,1.556,0.229,2.339,0.334
-				c0.178,0.023,0.354,0.052,0.531,0.075c0.778,0.101,1.567,0.188,2.358,0.273c0.186,0.02,0.369,0.045,0.557,0.063
-				c0.744,0.077,1.498,0.141,2.252,0.203c0.24,0.02,0.477,0.045,0.719,0.063c0.7,0.054,1.409,0.094,2.118,0.136
-				c0.3,0.018,0.596,0.041,0.897,0.057c0.729,0.037,1.467,0.061,2.204,0.084c0.285,0.01,0.565,0.025,0.852,0.033
-				c1.025,0.025,1.558,0.039,2.597,0.039c26.593,0,49.5-8.652,56.5-20.631v99.99c-7,11.984-29.9,21.141-56.5,21.141
-				c-33.137,0-59.5-13.5-59.5-29.5h-2v29.121L0,1625v650l709-354.048v-615.519v-100c1-1.764,1.5-3.577,1.5-5.434l1.201-59.899
-				L190.98,879.74z"/>
+			<path id="SVGID_3_" d="M191.23,879.953L550,700.112V501L50,751.16v181.542L584.989,1203c0.968,5.623,7.647,7.582,14.604,13.279
+				c6.323,5.179,18.014,9.6,27.99,11.73c0.027,0.006,0.241,0.013,0.269,0.019c0.84,0.179,1.784,0.347,2.644,0.507
+				c0.064,0.012,0.173,0.025,0.237,0.037c0.814,0.149,1.663,0.288,2.493,0.42c0.112,0.019,0.233,0.039,0.346,0.057
+				c0.771,0.121,1.558,0.229,2.341,0.334c0.178,0.023,0.354,0.052,0.532,0.075c0.778,0.101,1.568,0.188,2.359,0.273
+				c0.186,0.02,0.369,0.045,0.557,0.063c0.744,0.078,1.498,0.141,2.252,0.203c0.24,0.021,0.477,0.046,0.719,0.064
+				c0.7,0.054,1.409,0.094,2.118,0.136c0.3,0.018,0.596,0.041,0.897,0.057c0.729,0.037,1.467,0.061,2.204,0.084
+				c0.285,0.01,0.565,0.025,0.852,0.033c1.025,0.025,1.308,0.039,2.347,0.039c26.593,0,49.25-8.657,56.25-20.643v100.047
+				c-7,11.991-29.65,20.927-56.25,20.927c-33.137,0-59.25-13.742-59.25-29.742H589v29.589L0,1625.634V2276l900-354.247v-615.866
+				l-190.75-100.056c1-1.765,1.625-3.579,1.625-5.437l1.139-59.934L191.23,879.953z"/>
 		</defs>
-		<clipPath id="SVGID_6_">
-			<use xlink:href="#SVGID_5_"  overflow="visible"/>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
 		</clipPath>
-		<g id="ball" clip-path="url(#SVGID_6_)">
-			<circle fill="#00A99D" cx="451" cy="1075" r="50"/>
-			<path opacity="0.2" d="M481.001,1034.999c6.277,8.357,9.999,18.743,9.999,30.001c0,27.615-22.385,50-50,50
-				c-11.257,0-21.644-3.722-30-10c9.122,12.144,23.643,20,40,20c27.615,0,50-22.385,50-50
-				C501,1058.643,493.145,1044.121,481.001,1034.999z"/>
+		<g id="ball" clip-path="url(#SVGID_4_)">
+			<circle fill="#00A99D" cx="450" cy="1075" r="50"/>
+			<g>
+				<path opacity="0.2" d="M480.001,1034.999c6.277,8.357,9.999,18.743,9.999,30.001c0,27.615-22.385,50-50,50
+					c-11.257,0-21.644-3.722-30-10c9.122,12.144,23.643,20,40,20c27.615,0,50-22.385,50-50
+					C500,1058.643,492.145,1044.121,480.001,1034.999z"/>
+				<g>
+					<defs>
+						<circle id="SVGID_5_" cx="450" cy="1075" r="50"/>
+					</defs>
+					<clipPath id="SVGID_6_">
+						<use xlink:href="#SVGID_5_"  overflow="visible"/>
+					</clipPath>
+					<g clip-path="url(#SVGID_6_)">
+						<image overflow="visible" width="200" height="200" xlink:href="dust.png"  transform="matrix(0.5 0 0 0.5 400 1025)">
+						</image>
+					</g>
+				</g>
+			</g>
 		</g>
 	</g>
 	<polygon fill="#FFFF00" points="150,900.013 50.015,850 50,850.01 50,950 	"/>
 	<g id="drag">
-		<g opacity="0.2">
-			<path fill="none" stroke="#FFFF00" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2,2" d="M50,1500
-				c0,27.614,22.386,50,50,50h200c27.614,0,50-22.386,50-50v-200c0-27.614-22.386-50-50-50H100c-27.614,0-50,22.386-50,50V1500z"/>
-		</g>
 		<circle fill="#FFFF00" cx="100" cy="1300" r="50"/>
+		<g id="stars">
+			<polygon fill="#FFFF00" points="178.423,1273.905 178.146,1280.882 172.776,1276.419 166.057,1278.312 168.642,1271.826 
+				164.764,1266.02 171.732,1266.475 176.057,1260.992 177.776,1267.759 184.326,1270.177 			"/>
+			<polygon fill="#FFFF00" points="157.577,1345.905 151.674,1342.177 158.223,1339.759 159.943,1332.992 164.268,1338.475 
+				171.236,1338.02 167.358,1343.826 169.943,1350.312 163.223,1348.419 157.854,1352.882 			"/>
+			<polygon fill="#FFFF00" points="22.031,1314.638 24.678,1308.177 28.197,1314.207 35.159,1314.725 30.511,1319.937 
+				32.169,1326.719 25.777,1323.908 19.838,1327.582 20.538,1320.635 15.209,1316.123 			"/>
+		</g>
 	</g>
 	<polygon fill="#FFFF00" points="850,1350 750,1400 750,1300 850,1250 	"/>
 </g>
 <g id="letters">
+	<rect x="250" y="250" fill="#002B36" width="400" height="40"/>
 	<text transform="matrix(1 0 0 1 272.8608 97.2871)" fill="#FFFFFF" font-family="'Knewave'" font-size="60">What’s SVG?</text>
 	<text transform="matrix(1 0 0 1 500.9102 798.2666)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">SVG Shape Elements</text>
-	<rect x="176.667" y="138.279" fill="none" width="536" height="179.016"/>
-	<text transform="matrix(1 0 0 1 225.9951 150.4375)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">Scalable Vector Graphics (SVG) is an XML-based vector image</tspan><tspan x="86.348" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">format for two-dimensional graphics.</tspan><tspan x="58.562" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">An SVG image begins with an &lt;svg&gt; element:</tspan><tspan x="66.453" y="100" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">&lt;svg width=&quot;800&quot; height=&quot;600&quot;&gt;&lt;/svg&gt;</tspan><tspan x="-47.098" y="125" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">The width and height attributes of the &lt;svg&gt; element define the width and </tspan><tspan x="130.637" y="150" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">height of the SVG image.</tspan></text>
-	<g>
-		<rect x="499.765" y="838.133" fill="none" width="349.735" height="173.203"/>
-		<text transform="matrix(1 0 0 1 499.7637 850.2935)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">SVG has some predefined shape elements that </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">can be used by developers:</tspan><tspan x="0" y="75" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Rectangle &lt;rect&gt;</tspan><tspan x="0" y="100" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Circle &lt;circle&gt;</tspan><tspan x="0" y="125" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Ellipse &lt;ellipse&gt;</tspan><tspan x="0" y="150" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Line &lt;line&gt;</tspan></text>
-	</g>
+	<rect x="221.667" y="138.279" fill="none" width="446" height="98.028"/>
+	<text transform="matrix(1 0 0 1 225.9951 150.4385)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">Scalable Vector Graphics (SVG) is an XML-based vector image</tspan><tspan x="86.348" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">format for two-dimensional graphics.</tspan><tspan x="58.562" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">An SVG image begins with an &lt;svg&gt; element:</tspan></text>
 	<text transform="matrix(1 0 0 1 50.5508 1098.5059)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">G &lt;g&gt;</text>
 	<g>
 		<rect x="49.413" y="1137.367" fill="none" width="365.587" height="77.633"/>
 		<text transform="matrix(1 0 0 1 49.4131 1149.5273)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">The g element is a container used to group </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">objects. Transformations applied to the g element </tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">are performed on all of its child elements.</tspan></text>
 	</g>
-	<text transform="matrix(1 0 0 1 699.5 925.7354)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Polyline &lt;polyline&gt;</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Polygon &lt;polygon&gt;</tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Path &lt;path&gt;</tspan></text>
+	<text transform="matrix(1 0 0 1 699.5 850.8438)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Polyline &lt;polyline&gt;</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Polygon &lt;polygon&gt;</tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Path &lt;path&gt;</tspan></text>
+	<text transform="matrix(1 0 0 1 499.7646 850.8438)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Rectangle &lt;rect&gt;</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Circle &lt;circle&gt;</tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Ellipse &lt;ellipse&gt;</tspan><tspan x="0" y="75" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Line &lt;line&gt;</tspan></text>
+	<text transform="matrix(1 0 0 1 277.1719 273.4756)"><tspan x="0" y="0" fill="#839496" font-family="'Courier'" font-size="16">&lt;</tspan><tspan x="9.602" y="0" fill="#268BD2" font-family="'Courier'" font-size="16">svg</tspan><tspan x="38.406" y="0" fill="#839496" font-family="'Courier'" font-size="16"> </tspan><tspan x="48.008" y="0" fill="#B58900" font-family="'Courier'" font-size="16">width</tspan><tspan x="96.016" y="0" fill="#839496" font-family="'Courier'" font-size="16">=</tspan><tspan x="105.617" y="0" fill="#2AA198" font-family="'Courier'" font-size="16">&quot;800&quot;</tspan><tspan x="153.625" y="0" fill="#839496" font-family="'Courier'" font-size="16"> </tspan><tspan x="163.227" y="0" fill="#B58900" font-family="'Courier'" font-size="16">height</tspan><tspan x="220.836" y="0" fill="#839496" font-family="'Courier'" font-size="16">=</tspan><tspan x="230.438" y="0" fill="#2AA198" font-family="'Courier'" font-size="16">&quot;600&quot;</tspan><tspan x="278.445" y="0" fill="#839496" font-family="'Courier'" font-size="16">&gt;&lt;/</tspan><tspan x="307.25" y="0" fill="#268BD2" font-family="'Courier'" font-size="16">svg</tspan><tspan x="336.055" y="0" fill="#839496" font-family="'Courier'" font-size="16">&gt;</tspan></text>
+</g>
+<g id="links">
+	<g id="link1">
+		<path fill="#FFFFFF" d="M508.571,953.467c1.083-0.888,3.507-2.368,4.849-2.875c1.039-0.381,2.251-0.592,3.377-0.592
+			c0.995,0,1.082,0,2.9,0.465c0.347,0.084,0.952,0.211,1.731,0.38c1.602,0.338,2.425,0.888,3.853,2.58
+			c2.944,0.464,3.03,0.507,8.875,0.845c2.425,0.127,3.723,0.338,4.588,0.719c0.736,0.296,1.256,1.1,1.256,1.903
+			c0,1.184-0.953,1.903-2.987,2.241c-0.693,0.084-2.078,0.127-5.195,0.127c-0.995,0-2.25,0-3.723,0
+			c0.521,0.803,0.649,1.226,0.649,1.945c0,1.48-1.039,2.495-2.554,2.622c0.173,0.507,0.261,0.803,0.261,1.099
+			c0,1.522-1.256,2.791-2.685,2.791c-0.261,0-0.478-0.043-0.952-0.169c0.043,0.211,0.086,0.423,0.086,0.55
+			c0,1.014-1.126,1.902-2.425,1.902c-0.476,0-1.081-0.127-2.121-0.465c-0.952,0.084-1.602,0.127-2.034,0.127
+			c-1.775,0-3.073-0.55-6.666-2.664c-1.386-0.803-1.602-0.93-2.598-1.311c-0.909,0.888-1.559,1.1-3.637,1.1
+			c-1.213,0-1.731-0.169-2.034-0.677c-0.866-1.521-1.386-4.186-1.386-7.441c0-2.96,0.347-4.61,1.17-5.328
+			c0.346-0.296,0.562-0.381,1.342-0.423c1.385-0.085,1.385-0.085,1.602-0.085c1.125,0,1.472,0.17,2.813,1.438
+			C507.532,954.271,507.662,954.186,508.571,953.467z M503.854,954.017l-0.823,0.042c-0.086,0-0.173,0-0.259,0
+			c-0.737,0-0.996,0.169-1.213,0.635c-0.26,0.676-0.433,2.241-0.433,4.229c0,2.495,0.303,4.271,0.908,5.835
+			c0.261,0.634,0.478,0.761,1.169,0.761c2.166,0,2.598-0.084,2.598-0.507c0-0.127-0.086-0.381-0.39-1.058
+			c-0.433-1.014-0.692-2.791-0.692-4.693c0-1.987,0.173-3.044,0.606-4.313c0.044-0.126,0.086-0.295,0.086-0.38
+			c0-0.296-0.52-0.55-1.082-0.55H503.854z M512.207,959.471c1.775,0,2.944-0.254,4.07-0.972c1.428-0.888,2.381-1.734,3.204-2.706
+			c0.519,0.126,0.562,0.126,0.864,0.254c0.521,0.169,0.866,0.295,1.083,0.422c0.259,0.042,0.346,0.126,0.648,0.55
+			c0.823,1.141,1.818,1.733,2.987,1.733c0.78,0,1.299-0.338,1.299-0.846c0-0.465-0.822-1.987-1.818-3.34
+			c-1.256-1.734-1.861-2.114-4.069-2.706c-1.515-0.423-3.073-0.719-3.723-0.719c-1.082,0-2.121,0.254-3.246,0.761
+			c-1.169,0.507-3.203,1.733-4.373,2.58c-1.038,0.803-1.602,1.056-2.294,1.056c0,0-0.173,0-0.346-0.042
+			c-0.39,0.845-0.477,1.142-0.52,2.621l-0.044,1.945c0,0.507,0.087,1.353,0.217,2.029c0.173,1.1,0.347,1.48,0.909,2.283
+			c0.778,0.423,0.909,0.465,1.645,0.804c0.693,0.338,1.299,0.634,1.861,0.973c2.728,1.649,4.372,2.325,6.018,2.41
+			c-1.904-1.437-2.727-2.579-2.727-3.805c0-1.311,0.865-2.199,2.164-2.241c-0.087-0.339-0.13-0.508-0.13-0.719
+			c0-1.142,0.823-1.902,2.208-2.029c-0.174-0.338-0.217-0.423-0.304-0.846c-1.904,0.973-2.121,1.099-2.683,1.268
+			c-0.693,0.212-2.469,0.423-3.335,0.423c-0.951,0-1.688-0.338-1.688-0.803c0-0.296,0.217-0.465,0.562-0.465
+			c0.087,0,0.087,0,1.298,0.126H512.207z M515.021,964.63c0,0.719,0.693,1.733,1.862,2.664c1.385,1.142,2.38,1.606,3.419,1.606
+			c0.823,0,1.429-0.423,1.429-0.972c0-0.296-0.26-0.677-0.779-1.057c-0.26-0.211-0.26-0.253-2.034-1.269
+			c-0.52-0.296-0.952-0.55-1.386-0.888c-0.433-0.338-0.259-0.169-0.648-0.549c-0.39-0.381-0.521-0.423-0.779-0.423
+			C515.498,963.742,515.021,964.165,515.021,964.63z M517.013,962.051c0,0.845,0.909,1.691,3.377,3.044
+			c1.688,0.972,2.684,1.353,3.377,1.353c0.735,0,1.429-0.676,1.429-1.396c0-0.507-0.521-1.226-1.083-1.479
+			c-1.212-0.507-3.376-1.606-3.982-1.945c-1.212-0.719-1.342-0.762-1.818-0.762C517.619,960.866,517.013,961.417,517.013,962.051z
+			 M525.195,959.895c-0.693,0-1.516-0.169-2.208-0.465c-0.477-0.212-1.3-0.93-1.775-1.564c-0.433-0.55-0.562-0.676-0.909-0.676
+			c-0.648,0-1.385,0.718-1.385,1.268c0,0.719,0.52,1.396,1.645,2.03c1.515,0.888,2.641,1.438,3.637,1.775
+			c1.082,0.381,1.472,0.465,1.774,0.465c0.823,0,1.602-0.719,1.602-1.522c0-0.55-0.216-0.973-0.865-1.649
+			C526.061,959.81,525.714,959.895,525.195,959.895z M526.146,954.778c0.13,0.169,0.26,0.338,0.391,0.55
+			c0.649,0.846,1.038,1.945,1.038,2.748c1.04,0.042,1.905,0.042,2.338,0.042c0.778,0,1.602-0.042,2.814-0.042h3.159
+			c1.818,0,2.9-0.464,2.9-1.184c0-0.719-0.865-1.184-2.424-1.311l-8.701-0.677L526.146,954.778z"/>
+	</g>
 </g>
 </svg>

@@ -8,11 +8,7 @@ body{
   margin: 0;
   padding: 0;
   color: white;
-}
-.container{
-  margin: auto;
-  text-align: center;
-  width: 900px;
+  overflow-x: hidden;
 }
 
 #bg{
@@ -25,6 +21,7 @@ body{
   left: 50%;
   width: 800px;
   margin-left: -400px;
+  z-index: 1;
   -webkit-transition: bottom .3s;
   -moz-transition: bottom .3s;
   -ms-transition: bottom .3s;
@@ -70,6 +67,7 @@ code{
 #grids,
 #noPointEvent,
 #drag *:not(circle),
+#ball g,
 #numV *, #numH *{
   pointer-events: none;
   -webkit-user-select: none;

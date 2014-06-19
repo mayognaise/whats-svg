@@ -3,6 +3,7 @@ var Drag;
 Drag = (function() {
   function Drag() {
     this.g = d3.select('#drag');
+    this.stars = this.g.select('#stars');
     this.init();
   }
 
@@ -14,7 +15,7 @@ Drag = (function() {
       fill = el.attr('fill');
     el.remove();
     this.g.selectAll('circle')
-      .data([{x: 0, y: 0}])
+      .data([{x: 0, y: 0, stars: this.stars}])
       .enter().append('circle')
       .attr({cx: x, cy: y, r: r, fill: fill})
       .call(this.drag)
@@ -31,9 +32,8 @@ Drag = (function() {
           y = d3.event.y;
       d.x = Math.min(200, Math.max(0, x));
       d.y = Math.min(200, Math.max(0, y));
-      d3.select(this).attr('transform', function(d){
-        return 'translate(' + [d.x, d.y] + ')';
-      });
+      d3.select(this).attr('transform', 'translate(' + [d.x, d.y] + ')');
+      d.stars.attr('transform', 'translate(' + [d.x, d.y] + ')');
     })
     .on('dragend', function(d){
     });

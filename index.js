@@ -1,7 +1,7 @@
 (function(){
 var _xml, _json, _width, _height, _y,
-  _ball, _dragCircle,
-  _$highlight = document.getElementById('highlight');
+  _ball, _dragCircle, _radiationLeft, _radiationRight,
+  _$svg, _$highlight,
   convert = function(html){
     return html
       .replace('stroke-miterlimit="10" ', '')
@@ -13,10 +13,10 @@ var _xml, _json, _width, _height, _y,
   updateHighlighting = function(html){
     if(html){
       html = '<pre><code id="code" class="html">' + convert(html) + '</code></pre>';
-      _$highlight.innerHTML = html;
+      _$highlight.html(html);
       if(html) hljs.highlightBlock(document.getElementById('code'));
     }
-    d3.select(_$highlight).classed('show', !!(html));
+    _$highlight.classed('show', !!(html));
   },
   addShapeElementEvents = function(){
     var g = d3.select('svg').append('g').attr('class', 'info');
@@ -70,7 +70,8 @@ var _xml, _json, _width, _height, _y,
         el.info.guides = _.clone(d.guides);
         if(/polyline/.test(d.selector) || /polygon/.test(d.selector))
           addGuidesByPoints(el);
-        el.classed('pointer', true);
+        if(getComputedStyle(el.node()).pointerEvents !== 'none')
+          el.classed('pointer', true);
         el.on('mouseover',function(){over(el)});
         el.on('mouseout',function(){out(el)});
       });
@@ -85,8 +86,13 @@ var _xml, _json, _width, _height, _y,
     });
   },
   update = function(){
-    if(_width !== undefined && _height !== undefined && _y !== undefined && _ball){
-      _ball.update(_width, _height, _y);
+    if(_width !== undefined && _height !== undefined && _y !== undefined){
+      var ratio = _width / 900;
+      if(_$svg) _$svg.attr({'width': _width, 'height': ratio * 3000});
+      if(_$highlight) _$highlight.style({'font-size': ratio + 'em', 'width': ratio * 800, 'margin-left': ratio * -400});
+      if(_ball) _ball.update(_width, _height, _y, ratio);
+      if(_radiationLeft) _radiationLeft.update(_y);
+      if(_radiationRight) _radiationRight.update(_y);
     }
   },
   onscroll = function(){
@@ -99,10 +105,15 @@ var _xml, _json, _width, _height, _y,
     update();
   },
   setup = function(){
-    document.getElementById('container').appendChild(_xml.documentElement);
+    document.body.appendChild(_xml.documentElement);
+    // document.getElementById('container').appendChild(_xml.documentElement);
     adjustFonts(['tspan', 'text']);
+    _$highlight = d3.select('#highlight');
+    _$svg = d3.select('svg');
     _ball = new Ball();
     _dragCircle = new Drag();
+    _radiationLeft = new Radiation('#radiationLeft');
+    _radiationRight = new Radiation('#radiationRight');
     addShapeElementEvents();
     onresize();
     onscroll();
