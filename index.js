@@ -2,6 +2,7 @@
 var _xml, _json, _width, _height, _y,
   _ball, _dragCircle, _radiationLeft, _radiationRight,
   _imageProjector,
+  _svgWidth, _svgHeight,
   _$svg, _$highlight,
   convert = function(html){
     return html
@@ -20,7 +21,7 @@ var _xml, _json, _width, _height, _y,
     _$highlight.classed('show', !!(html));
   },
   addShapeElementEvents = function(){
-    var g = d3.select('svg').append('g').attr('class', 'info');
+    var g = _$svg.append('g').attr('class', 'info');
     over = function(el){
       var info = el.info, d = {};
       info.d_array.forEach(function(attr){ d[attr] = el.attr(attr);});
@@ -88,29 +89,34 @@ var _xml, _json, _width, _height, _y,
   },
   update = function(){
     if(_width !== undefined && _height !== undefined && _y !== undefined){
-      var ratio = _width / 900;
-      if(_$svg) _$svg.attr({'width': _width, 'height': ratio * 3000});
-      if(_$highlight) _$highlight.style({'font-size': ratio + 'em', 'width': ratio * 800, 'margin-left': ratio * -400});
+      var ratio = _width / _svgWidth,
+          highlightWidth = _svgWidth - 100;
+      if(_$svg) _$svg.attr({'width': _width, 'height': ratio * _svgHeight});
+      if(_$highlight) _$highlight.style({'font-size': ratio + 'em', 'width': ratio * highlightWidth, 'margin-left': ratio * highlightWidth / -2});
       if(_ball) _ball.update(_width, _height, _y, ratio);
       if(_radiationLeft) _radiationLeft.update(_y);
       if(_radiationRight) _radiationRight.update(_y);
     }
   },
   onscroll = function(){
+    // console.log('onrscroll');
     _y = window.pageYOffset;
     update();
   },
   onresize = function(){
+    // console.log('onresize');
     _width = window.innerWidth;
     _height = window.innerHeight;
+    console.log(_width, _height);
     update();
   },
   setup = function(){
     document.body.appendChild(_xml.documentElement);
-    // document.getElementById('container').appendChild(_xml.documentElement);
     adjustFonts(['tspan', 'text']);
     _$highlight = d3.select('#highlight');
     _$svg = d3.select('svg');
+    _svgWidth = parseInt(_$svg.attr('width'));
+    _svgHeight = parseInt(_$svg.attr('height'));
     _ball = new Ball();
     _dragCircle = new Drag();
     _radiationLeft = new Radiation('#radiationLeft');

@@ -43,12 +43,18 @@ Ball = (function() {
         per = (y - this.y + height / 2) / height,
         vect = 1,
         angle = 0;
+    // console.log(y / ratio);
     if(!cx && cy < 1000) cx = this.wPathArray[550];
     if(cx){
       this.stopAnimation();
       if(cy < 850 || 1450 < cy) vect = -1;
       if(cy < 850 || 900 < cy && cy < 1200 || 1450 < cy) angle = y * vect * 2;
       this.move(cx, cy, angle);
+    }else if(y / ratio > 1775){
+      this.stopAnimation();
+      cy = 1450;
+      cx = this.wPathArray[1449];
+      this.move(cx, cy);
     }else if(!this.animationIid){
       this.startAnimation();
     }

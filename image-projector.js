@@ -2,7 +2,6 @@ var ImageProjector;
 
 ImageProjector = (function() {
   function ImageProjector() {
-    this.resultContainer = [];
     this.skewY = 26.5;
     this.x = 600; // 600
     this.y = 1750; // 1625
@@ -62,14 +61,9 @@ ImageProjector = (function() {
           };
           img.src = url;
     }else{
-      var num = (this.cursor.currentPageIndex + 1) % this.pageLength;
-      if(this.resultContainer[num]){
-        this.results = this.resultContainer[num];
-        this.showImage(0);
-      }else{
-        this.imageSearchManager.gotoPage(num);
-      }
-      console.log('gotoPage', num);
+      var num = (this.pageIndex + 1) % this.pageLength;
+      this.imageSearchManager.gotoPage(num);
+      // console.log('gotoPage', num);
     }
     this.count = count;
   };
@@ -79,7 +73,8 @@ ImageProjector = (function() {
       this.results = res.results;
       this.cursor = this.imageSearchManager.getCursor();
       this.pageLength = this.cursor.pages.length;
-      this.resultContainer[this.cursor.currentPageIndex] = this.results;
+      this.pageIndex = this.cursor.currentPageIndex;
+      // console.log(this.pageIndex);
       this.showImage(0);
     }
   };
@@ -89,7 +84,7 @@ ImageProjector = (function() {
     var that = this;
     this.imageSearchManager = new ImageSearchManager();
     this.imageSearchManager.ready(function(){
-      that.imageSearchManager.execute('doge', function(res){ that.output(res); });
+      that.imageSearchManager.execute('gif doge', function(res){ that.output(res); });
     });
   };
 
