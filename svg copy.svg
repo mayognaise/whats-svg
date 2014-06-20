@@ -307,8 +307,8 @@
 			<text transform="matrix(1 0 0 1 880.125 2996.998)" opacity="0.2" fill="#FFFFFF" font-family="'OpenSansLight-Italic'" font-size="9">900</text>
 	</g>
 </g>
-<g id="obj">
-	<g id="noPointEvent" opacity="0.2">
+<g id="objBehind">
+	<g id="noPointEvent" opacity="0.3">
 		<polyline stroke="#FFFF00" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2,2" points="749,1700 749,2100 599,2025 
 			599,1625 		"/>
 		<path id="radiationRight" fill="none" stroke="#FFFF00" stroke-miterlimit="10" d="M850,450
@@ -351,6 +351,8 @@
 		<path fill="none" stroke="#00FFFF" stroke-miterlimit="10" d="M0,875"/>
 		<path fill="none" stroke="#00FFFF" stroke-miterlimit="10" d="M99.5,940"/>
 	</g>
+</g>
+<g id="obj">
 	<polygon opacity="0.2" fill="#00A99D" points="850,1250 50,850 50,950 750.024,1300 	"/>
 	<polygon opacity="0.5" points="50,950 550,700 350,700 50,850.019 	"/>
 	<g opacity="0.6">

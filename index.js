@@ -1,6 +1,7 @@
 (function(){
 var _xml, _json, _width, _height, _y,
   _ball, _dragCircle, _radiationLeft, _radiationRight,
+  _imageProjector,
   _$svg, _$highlight,
   convert = function(html){
     return html
@@ -114,6 +115,7 @@ var _xml, _json, _width, _height, _y,
     _dragCircle = new Drag();
     _radiationLeft = new Radiation('#radiationLeft');
     _radiationRight = new Radiation('#radiationRight');
+    _imageProjector = new ImageProjector();
     addShapeElementEvents();
     onresize();
     onscroll();
@@ -121,6 +123,7 @@ var _xml, _json, _width, _height, _y,
     window.onscroll = onscroll;
   },
   init = function(){
+    google.load('search', '1');
     queue()
       .defer(d3.xml, 'svg copy.svg', 'image/svg+xml')
       // .defer(d3.json, 'data.json')
