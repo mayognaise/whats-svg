@@ -47,6 +47,50 @@ var _data = {
     {
       "selector": "#linkElements",
       "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/"
+    },
+    {
+      "selector": "#linkD3Js",
+      "url": "http://d3js.org/"
+    },
+    {
+      "selector": "#linkTwoJs",
+      "url": "http://jonobr1.github.io/two.js/"
+    },
+    {
+      "selector": "#linkRaphael",
+      "url": "http://raphaeljs.com/"
+    },
+    {
+      "selector": "#linkSnapSvg",
+      "url": "http://snapsvg.io/"
+    },
+    {
+      "selector": "#linkSvgJS",
+      "url": "http://svgjs.com/"
+    },
+    {
+      "selector": "#linkPhantomJs",
+      "url": "http://phantomjs.org/"
+    },
+    {
+      "selector": "#linkFabricJs",
+      "url": "http://fabricjs.com/"
+    },
+    {
+      "selector": "#linkQueueJs",
+      "url": "http://giscollective.org/d3-queue-js/"
+    },
+    {
+      "selector": "#linkIllustrator",
+      "url": "http://css-tricks.com/using-svg/"
+    },
+    {
+      "selector": "#linkForce",
+      "url": "https://github.com/mbostock/d3/wiki/Force-Layout"
+    },
+    {
+      "selector": "#linkStory",
+      "url": "http://story-build.ne-zu.com/"
     }
   ],
   "buttons": [
