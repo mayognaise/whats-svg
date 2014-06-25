@@ -87,6 +87,22 @@ code{
   user-select: none;
 }
 
+/* ---------- dot line animation ---------- */
+*[stroke-dasharray="2,2"]{
+  -webkit-animation: dash 1s infinite linear;
+  -moz-animation: dash 1s infinite linear;
+  -ms-animation: dash 1s infinite linear;
+  -o-animation: dash 1s infinite linear;
+  animation: dash 1s infinite linear;
+}
+
+@-webkit-keyframes dash { to { stroke-dashoffset: 4; } }
+@-moz-keyframes dash { to { stroke-dashoffset: 4; } }
+@-ms-keyframes dash { to { stroke-dashoffset: 4; } }
+@-o-keyframes dash { to { stroke-dashoffset: 4; } }
+@keyframes dash { to { stroke-dashoffset: 4; } }
+
+
 /* ---------- info ---------- */
 .info{
   opacity: 0;

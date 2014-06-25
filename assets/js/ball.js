@@ -86,7 +86,7 @@ Ball = (function() {
     this.animationIid = setInterval(function(){
       if(that.pauseFlag) return;
       that.animationCount = count;
-      var info = that.getAnimeInfo(count, 10);
+      var info = that.getAnimeInfo(count, 3);
       that.move(info.x, info.y, info.angle);
       count = info.count;
       // console.log(info.angle);

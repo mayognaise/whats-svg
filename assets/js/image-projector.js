@@ -41,6 +41,9 @@ ImageProjector = (function() {
           // url = result.unescapedUrl,
           url = result.tbUrl,
           img = new Image();
+          img.onerror = function(){
+            console.log('error!');
+          };
           img.onload = function(){
             var w, h, x, y;
             if(img.width / img.height > that.width / that.height){
