@@ -164,7 +164,7 @@ var _data = {
               arr = [];
           stars.selectAll('polygon').each(function(){
             var points = d3.select(this).attr('points');
-            console.log(points);
+            // console.log(points);
             // starHTML.replace(points, '...');
             starHTML = starHTML.replace(points.substring(5, points.split('').length - 10), '...');
           });
