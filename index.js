@@ -146,7 +146,6 @@ var _xml, _json, _width, _height, _y,
     window.onscroll = onscroll;
   },
   init = function(){
-    google.load('search', '1');
     queue()
       .defer(d3.xml, 'svg copy.svg', 'image/svg+xml')
       // .defer(d3.json, 'data.json')

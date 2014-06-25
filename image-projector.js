@@ -1,5 +1,11 @@
 var ImageProjector;
 
+var flag = false,
+imageSearchManager = new ImageSearchManager();
+imageSearchManager.ready(function(){
+  flag = true;
+});
+
 ImageProjector = (function() {
   function ImageProjector() {
     this.skewY = Math.atan(-1 / 2)*(180 / Math.PI);
@@ -113,15 +119,35 @@ ImageProjector = (function() {
   };
 
   ImageProjector.prototype.init = function(){
-    var that = this;
-    this.imageSearchManager = new ImageSearchManager();
-    this.imageSearchManager.ready(function(){
-      that.imageSearchManager.execute('gif doge', function(res){ that.output(res); });
-      // branding
-      that.imageSearchManager.getBranding(function(res){
-        that.showBranding(res);
-      });
-    });
+    var that = this,
+        check = function(){
+          console.log(flag);
+          if(flag){
+            return true;
+          }else{
+            return false;
+          }
+        },
+        iid = setInterval(function(){
+          if(check()){
+            clearInterval(iid);
+            that.imageSearchManager = imageSearchManager;
+            that.imageSearchManager.execute('gif doge', function(res){ that.output(res); });
+            // branding
+            that.imageSearchManager.getBranding(function(res){
+              that.showBranding(res);
+            });
+          }
+        }, 500);
+
+    // this.imageSearchManager = new ImageSearchManager();
+    // this.imageSearchManager.ready(function(){
+    //   that.imageSearchManager.execute('gif doge', function(res){ that.output(res); });
+    //   // branding
+    //   that.imageSearchManager.getBranding(function(res){
+    //     that.showBranding(res);
+    //   });
+    // });
   };
 
   ImageProjector.prototype.getTransform = function(obj){
