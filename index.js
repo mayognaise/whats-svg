@@ -84,6 +84,15 @@ var _xml, _json, _width, _height, _y,
       });
     });
   },
+  addLinks = function(){
+    _data.links.forEach(function(d){
+      var el = d3.select(d.selector),
+          url = d.url;
+      el.on('click', function(){
+        window.open(url, '_blank');
+      });
+    });
+  },
   adjustFonts = function(arr){
     arr.forEach(function(selector){
       d3.selectAll(selector).each(function(){
@@ -129,6 +138,7 @@ var _xml, _json, _width, _height, _y,
     _imageProjector = new ImageProjector();
     new CatMask();
     addShapeElementEvents();
+    addLinks();
     onresize();
     onscroll();
     window.onresize = onresize;

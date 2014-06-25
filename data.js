@@ -1,4 +1,54 @@
 var _data = {
+  "links": [
+    {
+      "selector": "#linkRect",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect"
+    },
+    {
+      "selector": "#linkCircle",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle"
+    },
+    {
+      "selector": "#linkEllipse",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse"
+    },
+    {
+      "selector": "#linkLine",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line"
+    },
+    {
+      "selector": "#linkPolyline",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline"
+    },
+    {
+      "selector": "#linkPolygon",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon"
+    },
+    {
+      "selector": "#linkPath",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path"
+    },
+    {
+      "selector": "#linkG",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g"
+    },
+    {
+      "selector": "#linkAnime",
+      "url": "http://blog.legomushroom.com/2014/03/defining-advanced-animation-path/"
+    },
+    {
+      "selector": "#linkImage",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image"
+    },
+    {
+      "selector": "#linkClipPath",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clippath"
+    },
+    {
+      "selector": "#linkElements",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/"
+    }
+  ],
   "buttons": [
     {
       "selector": "circle",
@@ -152,7 +202,7 @@ var _data = {
       ]
     },
     {
-      "selector": "rect",
+      "selector": "#obj rect",
       "d_array": [ "x", "y", "width", "height" ],
       "guides": [
         {

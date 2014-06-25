@@ -18,7 +18,6 @@ Ball = (function() {
 
   Ball.prototype.init = function(){
     var that = this;
-    this.el.attr('id', 'ball');
     this.x = parseInt(this.el.attr('cx'));
     this.y = parseInt(this.el.attr('cy'));
     this.r = parseInt(this.el.attr('r'));
