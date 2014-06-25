@@ -17,7 +17,7 @@ body{
 
 .highlight{
   position: fixed;
-  bottom: -200px;
+  bottom: -300px;
   left: 50%;
   width: 800px;
   margin-left: -400px;
@@ -63,11 +63,17 @@ code{
   fill: rgba(0,0,0,.3);
 }
 
+#imageProjector image{
+  cursor: pointer;
+}
+
 /* ---------- ingore pointer event ---------- */
+.info,
 #grids,
 #noPointEvent,
+#objFront *,
 #drag *:not(circle),
-#ball g,
+#ballG g,
 #numV *, #numH *{
   pointer-events: none;
   -webkit-user-select: none;
@@ -85,9 +91,6 @@ code{
   -ms-transition: opacity .3s;
   -o-transition: opacity .3s;
   transition: opacity .3s;
-}
-.info{
-  pointer-events: none;
 }
 .info.show{
   opacity: .9;

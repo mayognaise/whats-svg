@@ -72,7 +72,7 @@ ImageSearchManager = (function() {
         iid = setInterval(function(){
           if(div.innerHTML){
             clearInterval(iid);
-            callback(div.innerHTML);
+            callback(div);
           }
         }, 500);
     var orientation = isVertical? google.search.Search.VERTICAL_BRANDING : google.search.Search.HORIZONTAL_BRANDING;

@@ -30,8 +30,8 @@ Drag = (function() {
     .on('drag', function(d){
       var x = d3.event.x,
           y = d3.event.y;
-      d.x = Math.min(200, Math.max(0, x));
-      d.y = Math.min(200, Math.max(0, y));
+      d.x = Math.floor(Math.min(200, Math.max(0, x)));
+      d.y = Math.floor(Math.min(200, Math.max(0, y)));
       d3.select(this).attr('transform', 'translate(' + [d.x, d.y] + ')');
       d.stars.attr('transform', 'translate(' + [d.x, d.y] + ')');
     })

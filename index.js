@@ -10,6 +10,7 @@ var _xml, _json, _width, _height, _y,
       .replace(' class="pointer"', '')
       .replace(/&/g, "&amp;").replace(/>/g, "&gt;")
       .replace(/</g, "&lt;").replace(/"/g, "&quot;")
+      .replace(/\t/g, "")
       // .replace(/&gt;&lt;/g, "&gt;\n&lt;");
   },
   updateHighlighting = function(html){
@@ -24,25 +25,29 @@ var _xml, _json, _width, _height, _y,
     var g = _$svg.append('g').attr('class', 'info');
     over = function(el){
       var info = el.info, d = {};
-      info.d_array.forEach(function(attr){ d[attr] = el.attr(attr);});
+      if(info.d_array){
+        info.d_array.forEach(function(attr){ d[attr] = el.attr(attr);});
+      }
       out();
-      info.guides.forEach(function(guide){
-        var el = g.append(guide.shape)
-          .attr('class', 'info-guide-' + guide.shape)
-          .classed('guideline', guide.guideline);
-        for(var id in guide.attr) el.attr(id, guide.attr[id](d));
-        if(guide.shape === 'circle'){
-          if(!guide.guideline){
-            var x = parseInt(el.attr('cx')),
-            y = parseInt(el.attr('cy'));
-            g.append('text').attr('class', 'info-text')
-              .text('(' + [x,y] + ')')
-              .attr('transform','translate(' + [(x + 5),(y - 5)] + ')');
+      if(info.guides){
+        info.guides.forEach(function(guide){
+          var el = g.append(guide.shape)
+            .attr('class', 'info-guide-' + guide.shape)
+            .classed('guideline', guide.guideline);
+          for(var id in guide.attr) el.attr(id, guide.attr[id](d));
+          if(guide.shape === 'circle'){
+            if(!guide.guideline){
+              var x = parseInt(el.attr('cx')),
+              y = parseInt(el.attr('cy'));
+              g.append('text').attr('class', 'info-text')
+                .text('(' + [x,y] + ')')
+                .attr('transform','translate(' + [(x + 5),(y - 5)] + ')');
+            }
           }
-        }
-      });
-      g.classed('show', true);
-      updateHighlighting(el.node().outerHTML);
+        });
+        g.classed('show', true);
+      }
+      updateHighlighting(info.highlighting? info.highlighting(el) : el.node().outerHTML);
     }, 
     out = function(el){
       g.text('');
@@ -107,7 +112,7 @@ var _xml, _json, _width, _height, _y,
     // console.log('onresize');
     _width = window.innerWidth;
     _height = window.innerHeight;
-    console.log(_width, _height);
+    // console.log(_width, _height);
     update();
   },
   setup = function(){
@@ -122,6 +127,7 @@ var _xml, _json, _width, _height, _y,
     _radiationLeft = new Radiation('#radiationLeft');
     _radiationRight = new Radiation('#radiationRight');
     _imageProjector = new ImageProjector();
+    new CatMask();
     addShapeElementEvents();
     onresize();
     onscroll();

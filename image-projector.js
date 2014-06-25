@@ -2,13 +2,13 @@ var ImageProjector;
 
 ImageProjector = (function() {
   function ImageProjector() {
-    this.skewY = 26.5;
-    this.x = 600; // 600
-    this.y = 1750; // 1625
-    this.width = 148; // 150
-    this.height = 150; // 400
-    this.g = d3.select('svg').insert('g', '#obj')
-    // this.g = d3.select('svg').append('g')
+    this.skewY = Math.atan(-1 / 2)*(180 / Math.PI);
+    this.x = 100;
+    this.y = 2300;
+    this.width = 200;
+    this.height = 200;
+    // this.g = d3.select('svg').insert('g', '#obj')
+    this.g = d3.select('svg').append('g')
       .attr({
         'id': 'imageProjector',
         'transform': this.getTransform({x: this.x, y: this.y, skewY: this.skewY})
@@ -55,9 +55,17 @@ ImageProjector = (function() {
                 'xlink:href': result.unescapedUrl,
                 'clip-path': 'url(#clipMask)'
               });
-            setTimeout(function(){
+            var $img = that.imageG.select('image'),
+            tid = setTimeout(function(){
+              tid = null;
               that.showImage(++that.count);
             }, 20000);
+            $img.on('click', function(){
+              if(tid){
+                clearTimeout(tid);
+                that.showImage(++that.count);
+              }
+            });
           };
           img.src = url;
     }else{
@@ -80,11 +88,39 @@ ImageProjector = (function() {
   };
 
 
+  ImageProjector.prototype.showBranding = function(res){
+    // console.log(res);
+    var text = res.querySelector('div.gsc-branding-text').innerHTML,
+        img = res.querySelector('img');
+    // console.log(img.width, img.height); // 51, 15
+    var g = d3.select('svg').append('g')
+      .attr({
+        'transform': this.getTransform({
+          x: 300, y: 2400 - (img.height || 15), 
+          skewY: Math.atan(1 / 2)*(180 / Math.PI)})
+      });
+    g.append('image')
+      .attr({
+        'x': 60, 'y': 0, 
+        'width': (img.width || 51), 'height': (img.height || 15),
+        'xlink:href': img.src
+      });
+    g.append('text')
+      .attr({
+        'font-size': '.6em',
+        'transform': this.getTransform({x: 5, y: 10})
+      }).text(text);
+  };
+
   ImageProjector.prototype.init = function(){
     var that = this;
     this.imageSearchManager = new ImageSearchManager();
     this.imageSearchManager.ready(function(){
       that.imageSearchManager.execute('gif doge', function(res){ that.output(res); });
+      // branding
+      that.imageSearchManager.getBranding(function(res){
+        that.showBranding(res);
+      });
     });
   };
 

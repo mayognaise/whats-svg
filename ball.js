@@ -3,19 +3,22 @@ var Ball;
 Ball = (function() {
   function Ball() {
     this.speed = 600;
-    this.g = d3.select('#ball');
+    this.g = d3.select('#ballG');
     this.el = this.g.select('circle');
     this.others = this.g.select('g');
     this.shadow = this.others.select('path');
     this.pattern = this.others.select('image');
     this.gHole = d3.select('#hole');
     this.hole = this.gHole.select('ellipse');
-    this.guideRotation = d3.select('#ballAnimeGuideRotation').node();
+    this.$guideRotation = d3.select('#guide'); // circulation guide
+    this.guideRotation = this.$guideRotation.node();
     this.guideWalk = d3.select('#ballAnimeGuideWalk').node();
     this.init();
   }
 
   Ball.prototype.init = function(){
+    var that = this;
+    this.el.attr('id', 'ball');
     this.x = parseInt(this.el.attr('cx'));
     this.y = parseInt(this.el.attr('cy'));
     this.r = parseInt(this.el.attr('r'));
@@ -35,6 +38,9 @@ Ball = (function() {
       var point = this.guideWalk.getPointAtLength(i);
       this.wPathArray[Math.floor(point.y)] = Math.floor(point.x);
     }
+    this.$guideRotation.on('click', function(){
+      that.pauseAnimation();
+    });
   };
 
   Ball.prototype.update = function(width, height, y, ratio){
@@ -66,16 +72,23 @@ Ball = (function() {
     // this.shadow.attr('transform','rotate(' + (angle || 0) + ', ' + this.x + ', ' + this.y + ')');
     this.pattern.attr('transform','translate(' + [this.patternOriginX, this.patternOriginY] + ') rotate(' + [(angle || 0), this.r, this.r] + ')');
   };
+  Ball.prototype.pauseAnimation = function(){
+    this.pauseFlag = !this.pauseFlag;
+    if(this.pauseFlag) console.log(this.animationCount);
+  };
   Ball.prototype.stopAnimation = function(){
     this.animationFlag = false;
+    this.pauseFlag = false;
     clearInterval(this.animationIid);
     this.animationIid = null;
   };
   Ball.prototype.startAnimation = function(){
-    var self = this, count = self.rPathLength;
+    var that = this, count = Math.floor(that.rPathLength);
     this.animationIid = setInterval(function(){
-      var info = self.getAnimeInfo(count, 10);
-      self.move(info.x, info.y, info.angle);
+      if(that.pauseFlag) return;
+      that.animationCount = count;
+      var info = that.getAnimeInfo(count, 10);
+      that.move(info.x, info.y, info.angle);
       count = info.count;
       // console.log(info.angle);
     }, 33);

@@ -52,7 +52,27 @@ var _data = {
             "stroke-dasharray": function(d){ return "2, 3"; }
           }
         }
-      ]
+      ],
+      "highlighting": function(el){
+        var node = el.node(),
+            parentNode = node.parentElement;
+        if(parentNode.id === 'drag'){
+          var stars = d3.select('#stars'),
+              starHTML = stars.node().outerHTML;
+              arr = [];
+          stars.selectAll('polygon').each(function(){
+            var points = d3.select(this).attr('points');
+            console.log(points);
+            // starHTML.replace(points, '...');
+            starHTML = starHTML.replace(points.substring(5, points.split('').length - 10), '...');
+          });
+          return el.node().outerHTML + '\n' + starHTML;
+        // }else if(parentNode.id === 'ball'){
+        //   return el.node().outerHTML.replace('<circle', '<circle id="ball"');
+        }else{
+          return el.node().outerHTML;
+        }
+      }
     },
     {
       "selector": "ellipse",
@@ -200,6 +220,34 @@ var _data = {
           }
         }
       ]
+    },
+    {
+      "selector": "#catMaskG",
+      "d_array": [],
+      "guides": [],
+      "highlighting": function(el){
+        var d = el.select('path').attr('d'),
+            defs = el.select('defs'),
+            image = el.select('image');
+        d = d.substring(10, d.split('').length - 10);
+        return defs.node().outerHTML.replace(d, '...') + '\n' + image.node().outerHTML;
+      }
+    },
+    {
+      "selector": "#imageProjector",
+      "d_array": [],
+      "guides": [],
+      "highlighting": function(el){
+        var image = el.select('image');
+        return image.node().outerHTML.replace(' clip-path="url(#clipMask)"', '');
+      }
+    },
+    {
+      "selector": "#guide",
+      "d_array": [],
+      "guides": []
     }
   ]
 };
+
+

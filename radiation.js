@@ -112,7 +112,7 @@ Radiation = (function() {
   Radiation.prototype.getRandomD = function(init){
     var arr = [], x, y, item, ran,
         random = function(val){
-          var num = 100;
+          var num = 20;
           return Math.floor(val + Math.random() * num - num / 2);
         };
     for (var i = 0; i < this.ds.length; i++) {
