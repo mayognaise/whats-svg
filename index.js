@@ -6,12 +6,12 @@ var _xml, _json, _width, _height, _y,
   _$svg, _$highlight,
   convert = function(html){
     return html
-      .replace('stroke-miterlimit="10" ', '')
-      .replace(' class="pointer"', '')
-      .replace(/&/g, "&amp;").replace(/>/g, "&gt;")
-      .replace(/</g, "&lt;").replace(/"/g, "&quot;")
-      .replace(/\t/g, "")
-      // .replace(/&gt;&lt;/g, "&gt;\n&lt;");
+      .replace(/stroke-miterlimit="10" /g, '')
+      .replace(/ class="pointer"/g, '')
+      .replace(/&/g, '&amp;').replace(/>/g, '&gt;')
+      .replace(/</g, '&lt;').replace(/"/g, '&quot;')
+      .replace(/\t/g, '')
+      // .replace(/&gt;&lt;/g, '&gt;\n&lt;');
   },
   updateHighlighting = function(html){
     if(html){
@@ -137,6 +137,7 @@ var _xml, _json, _width, _height, _y,
     _radiationRight = new Radiation('#radiationRight');
     _imageProjector = new ImageProjector();
     new CatMask();
+    new Pattern();
     addShapeElementEvents();
     addLinks();
     onresize();

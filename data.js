@@ -45,6 +45,10 @@ var _data = {
       "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clippath"
     },
     {
+      "selector": "#linkPattern",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern"
+    },
+    {
       "selector": "#linkElements",
       "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/"
     },
@@ -334,6 +338,16 @@ var _data = {
       "highlighting": function(el){
         var image = el.select('image');
         return image.node().outerHTML.replace(' clip-path="url(#clipMask)"', '');
+      }
+    },
+    {
+      "selector": "#dogeRight",
+      "d_array": [],
+      "guides": [],
+      "highlighting": function(el){
+        var p = el.selectAll('polygon'),
+            defs = el.select('defs').node().outerHTML;
+        return defs.replace('<image', '\n<image') + '\n' + p[0][1].outerHTML;
       }
     },
     {
