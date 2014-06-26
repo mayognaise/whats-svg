@@ -1,7 +1,7 @@
 (function(){
 var _xml, _json, _width, _height, _y,
   _ball, _dragCircle, _radiationLeft, _radiationRight,
-  _imageProjector,
+  _imageProjector, _tapes,
   _svgWidth, _svgHeight,
   _$svg, _$highlight,
   convert = function(html){
@@ -108,6 +108,7 @@ var _xml, _json, _width, _height, _y,
       if(_$svg) _$svg.attr({'width': _width, 'height': ratio * _svgHeight});
       if(_$highlight) _$highlight.style({'font-size': ratio + 'em', 'width': ratio * highlightWidth, 'margin-left': ratio * highlightWidth / -2});
       if(_ball) _ball.update(_width, _height, _y, ratio);
+      if(_tapes) _tapes.update(_width, _height, _y, ratio);
       if(_radiationLeft) _radiationLeft.update(_y);
       if(_radiationRight) _radiationRight.update(_y);
     }
@@ -136,6 +137,7 @@ var _xml, _json, _width, _height, _y,
     _radiationLeft = new Radiation('#radiationLeft');
     _radiationRight = new Radiation('#radiationRight');
     _imageProjector = new ImageProjector();
+    _tapes = new Tapes();
     new CatMask();
     new Pattern();
     addShapeElementEvents();

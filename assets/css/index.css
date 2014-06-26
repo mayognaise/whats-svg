@@ -74,6 +74,7 @@ code{
 /* ---------- ingore pointer event ---------- */
 .info,
 #grids,
+#tape1, #tape2, #tape3, #tape4,
 #noPointEvent,
 #objFront *,
 #drag *:not(circle),

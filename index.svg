@@ -416,7 +416,7 @@
 <g id="objBehind">
 	<g id="noPointEvent" opacity="0.3">
 		<polygon fill="#00A99D" points="850,1250 50,850 50,950 750.024,1300 		"/>
-		<polygon fill="#00A99D" points="300,3100 900,3400 900,3300 300,3000 		"/>
+		<polygon id="tape2" fill="#00A99D" points="300,3100 900,3400 900,3300 300,3000 		"/>
 		<polygon fill="#00A99D" points="0,2850 600,2550 0,2250 		"/>
 		
 			<line fill="none" stroke="#FFFF00" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2,2" x1="600" y1="2550" x2="600" y2="1625"/>
@@ -425,7 +425,7 @@
 				c0,27.614,22.386,50,50,50h200c27.614,0,50-22.386,50-50v-200c0-27.614-22.386-50-50-50H100c-27.614,0-50,22.386-50,50V1500z"/>
 		</g>
 		<polyline opacity="0.6" fill="#00A99D" points="650,550 850,450 650,350 		"/>
-		<polygon fill="#00A99D" points="600,3550 0,3850 0,4000 900,4000 900,3700 		"/>
+		<polygon id="tapeFloor" fill="#00A99D" points="600,3550 0,3850 0,4000 900,4000 900,3700 		"/>
 		<polyline opacity="0.6" fill="#00A99D" points="250,550 51,450 250.5,350 		"/>
 		<line fill="none" stroke="#FFFF00" stroke-miterlimit="10" x1="750" y1="1400" x2="0" y2="1775"/>
 		<polyline fill="none" stroke="#FFFF00" stroke-miterlimit="10" points="449.438,1250 549.5,1200 549.5,1100 449.438,1150 
@@ -541,9 +541,9 @@
 			c0,6.259,0.544,12.395,1.541,18.373L530,2921.19l70.708-8.319c18.044,18.355,42.409,30.46,69.574,32.812l38.88,44.317
 			l10.195-51.057C754.135,2925.775,780.572,2895.684,788.612,2858.715z"/>
 	</g>
-	<polygon points="300,3100 0,3250 0,3150 300,3000 	"/>
-	<polygon fill="#FFFF00" points="900,3400 600,3550 600,3450 900,3300 	"/>
-	<polygon points="900,3600 600,3450 600,3550 900,3700 	"/>
+	<polygon id="tape1" points="300,3100 0,3250 0,3150 300,3000 	"/>
+	<polygon id="tape3" fill="#FFFF00" points="900,3400 600,3550 600,3450 900,3300 	"/>
+	<polygon id="tape4" points="900,3600 600,3450 600,3550 900,3700 	"/>
 </g>
 <g id="objFront">
 	<line fill="none" stroke="#FFFF00" stroke-miterlimit="10" x1="599.5" y1="1625" x2="599.5" y2="1325"/>
