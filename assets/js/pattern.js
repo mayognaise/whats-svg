@@ -10,7 +10,7 @@ Pattern = (function() {
     var that = this,
         patternId = 'dustPattern',
         polygon = this.g.select('polygon'),
-        src = 'assets/imgs/dust.png',
+        src = 'assets/imgs/bone.png',
         img = new Image(),
         pattern = this.g.append('defs').append('pattern').attr({
           id: patternId,
