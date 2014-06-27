@@ -115,6 +115,7 @@ ImageProjector = (function() {
         'xlink:href': img.src
       });
     g.append('text')
+      .classed('OpenSans-Bold', true)
       .attr({
         'font-size': '.6em',
         'transform': this.getTransform({x: 5, y: 10})

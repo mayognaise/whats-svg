@@ -532,7 +532,7 @@
 	<polygon fill="#FFFF00" points="850,1350 750,1400 750,1300 850,1250 	"/>
 	<polygon points="900,2700 600,2550 900,2400 	"/>
 	<polygon fill="#FFFF00" points="300,2400 100,2500 100,2300 300,2200 	"/>
-	<g id="dogeRight" opacity="0.6">
+	<g id="dogeRight">
 		<polygon fill="#FFFF00" points="300,2400 500,2500 500,2300 300,2200 		"/>
 	</g>
 	<g id="catMaskG">
