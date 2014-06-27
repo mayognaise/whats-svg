@@ -91,6 +91,18 @@ var _xml, _json, _width, _height, _y,
       el.on('click', function(){
         window.open(url, '_blank');
       });
+      el.on('mouseout', function(){
+        el.select('path').node().innerHTML = '';
+      });
+      el.on('mouseover', function(){
+        el.select('path').node().innerHTML = '<animateTransform attributeName="transform" ' +
+          'type="translateX" ' +
+          'from="0" to="2" ' +
+          'begin="0s" dur="500ms" ' +
+          'repeatCount="indefinite" ' +
+          // 'repeatDur="2s" ' +
+          '/>';
+      });
     });
   },
   adjustFonts = function(arr){
