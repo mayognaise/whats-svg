@@ -533,7 +533,7 @@
 	<polygon points="900,2700 600,2550 900,2400 	"/>
 	<polygon fill="#FFFF00" points="300,2400 100,2500 100,2300 300,2200 	"/>
 	<g id="dogeRight">
-		<polygon fill="#FFFF00" points="300,2400 500,2500 500,2300 300,2200 		"/>
+		<polygon fill="#00A99D" points="300,2400 500,2500 500,2300 300,2200 		"/>
 	</g>
 	<g id="catMaskG">
 		<path fill="#FFFF00" d="M788.612,2858.715L830,2840.941l-40.052-22.452c-5.368-36.019-28.036-66.367-59.274-82.394L725.519,2680
@@ -611,8 +611,8 @@
 		<text transform="matrix(1 0 0 1 99.8296 3350.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">There are SVG plugins which control svg element easily like jQuery.</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">The below is some famous plugin you can take a look:</tspan></text>
 	</g>
 	<text transform="matrix(1 0 0 1 400.9653 3698.5391)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">Story Build project</text>
-	<text transform="matrix(1 0 0 1 398.9653 3948.7002)" fill="#FFFFFF" font-family="'Knewave'" font-size="18">Very thankful to RayPatterson (</text>
-	<text transform="matrix(1 0 0 1 700.9277 3948.7002)" fill="#FFFFFF" font-family="'Knewave'" font-size="18">) for supervising!</text>
+	<text transform="matrix(1 0 0 1 398.9653 3948.7002)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Knewave'" font-size="18">Very thankful to </tspan><tspan x="141.964" y="0" fill="#FFFF00" font-family="'Knewave'" font-size="18">RayPatterson</tspan></text>
+	<text transform="matrix(1 0 0 1 692.9209 3948.7002)" fill="#FFFFFF" font-family="'Knewave'" font-size="18">for supervising!</text>
 	<g>
 		<rect x="399.83" y="3738.397" fill="none" width="449.67" height="112.103"/>
 		<text transform="matrix(1 0 0 1 399.8296 3750.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">“Story Build” is a project by Sunjin Kim (lightregularbold.com) </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">and Mayo Tobita (mayognaise) to make stories using very cute </tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">charactors. It’s still on progress but please check the example </tspan><tspan x="0" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">story!</tspan></text>
@@ -621,25 +621,17 @@
 		<rect x="99.83" y="3488.554" fill="none" width="349.67" height="134.446"/>
 		<text transform="matrix(1 0 0 1 99.8296 3500.7129)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">This website has been using d3.js and Queue.js </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">which you can load external json/xml data easily </tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">so that you can import svg data.</tspan><tspan x="0" y="100" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">This SVG is exported by Illustrator.</tspan></text>
 	</g>
-	<g>
-		<rect x="99.83" y="3413.397" fill="none" width="99.67" height="77.603"/>
-		<text transform="matrix(1 0 0 1 99.8296 3425.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">d3.js</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Two.js</tspan></text>
-	</g>
-	<g>
-		<rect x="249.947" y="3413.397" fill="none" width="99.67" height="77.603"/>
-		<text transform="matrix(1 0 0 1 249.9468 3425.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Snap.svg</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">svg.js</tspan></text>
-	</g>
-	<g>
-		<rect x="399.947" y="3413.397" fill="none" width="99.67" height="48.603"/>
-		<text transform="matrix(1 0 0 1 399.9468 3425.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Fabric.js</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Raphael</tspan></text>
-	</g>
-	<g>
-		
-			<rect x="563.559" y="3043.968" transform="matrix(0.9848 -0.1737 0.1737 0.9848 -522.8242 166.5908)" fill="none" width="254.169" height="54.465"/>
-		<text transform="matrix(0.9848 -0.1736 0.1736 0.9848 563.2705 3080.501)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Knewave'" font-size="18">There are so many another </tspan><tspan x="0.001" y="25" fill="#FFFFFF" font-family="'Knewave'" font-size="18">elements you can use in SVG!</tspan></text>
-	</g>
-	<text transform="matrix(1 0 0 1 649.5 925.8438)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Polyline &lt;polyline&gt;</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Polygon &lt;polygon&gt;</tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Path &lt;path&gt;</tspan></text>
-	<text transform="matrix(1 0 0 1 449.7646 925.8438)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Rectangle &lt;rect&gt;</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Circle &lt;circle&gt;</tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Ellipse &lt;ellipse&gt;</tspan><tspan x="0" y="75" fill="#FFFFFF" font-family="'OpenSans-Bold'" font-size="16">Line &lt;line&gt;</tspan></text>
+	<rect x="99.83" y="3413.397" fill="none" width="99.67" height="48.603"/>
+	<text transform="matrix(1 0 0 1 99.8296 3425.5566)"><tspan x="0" y="0" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">d3.js</tspan><tspan x="0" y="25" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Two.js</tspan></text>
+	<rect x="249.947" y="3413.397" fill="none" width="99.67" height="48.603"/>
+	<text transform="matrix(1 0 0 1 249.9468 3425.5566)"><tspan x="0" y="0" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Snap.svg</tspan><tspan x="0" y="25" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">svg.js</tspan></text>
+	<rect x="399.947" y="3413.397" fill="none" width="99.67" height="48.603"/>
+	<text transform="matrix(1 0 0 1 399.9468 3425.5566)"><tspan x="0" y="0" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Fabric.js</tspan><tspan x="0" y="25" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Raphael</tspan></text>
+	
+		<rect x="563.559" y="3043.968" transform="matrix(0.9848 -0.1737 0.1737 0.9848 -522.8242 166.5908)" fill="none" width="254.169" height="54.465"/>
+	<text transform="matrix(0.9848 -0.1736 0.1736 0.9848 563.2705 3080.501)"><tspan x="0" y="0" fill="#FFFF00" font-family="'Knewave'" font-size="18">There are so many another </tspan><tspan x="0.001" y="25" fill="#FFFF00" font-family="'Knewave'" font-size="18">elements you can use in SVG!</tspan></text>
+	<text transform="matrix(1 0 0 1 649.5 925.8438)"><tspan x="0" y="0" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Polyline &lt;polyline&gt;</tspan><tspan x="0" y="25" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Polygon &lt;polygon&gt;</tspan><tspan x="0" y="50" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Path &lt;path&gt;</tspan></text>
+	<text transform="matrix(1 0 0 1 449.7646 925.8438)"><tspan x="0" y="0" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Rectangle &lt;rect&gt;</tspan><tspan x="0" y="25" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Circle &lt;circle&gt;</tspan><tspan x="0" y="50" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Ellipse &lt;ellipse&gt;</tspan><tspan x="0" y="75" fill="#FFFF00" font-family="'OpenSans-Bold'" font-size="16">Line &lt;line&gt;</tspan></text>
 	<text transform="matrix(1 0 0 1 272.3711 273.4756)"><tspan x="0" y="0" fill="#839496" font-family="'Courier'" font-size="16">&lt;</tspan><tspan x="9.602" y="0" fill="#268BD2" font-family="'Courier'" font-size="16">svg</tspan><tspan x="38.406" y="0" fill="#839496" font-family="'Courier'" font-size="16"> </tspan><tspan x="48.008" y="0" fill="#B58900" font-family="'Courier'" font-size="16">width</tspan><tspan x="96.016" y="0" fill="#839496" font-family="'Courier'" font-size="16">=</tspan><tspan x="105.617" y="0" fill="#2AA198" font-family="'Courier'" font-size="16">&quot;900&quot;</tspan><tspan x="153.625" y="0" fill="#839496" font-family="'Courier'" font-size="16"> </tspan><tspan x="163.227" y="0" fill="#B58900" font-family="'Courier'" font-size="16">height</tspan><tspan x="220.836" y="0" fill="#839496" font-family="'Courier'" font-size="16">=</tspan><tspan x="230.438" y="0" fill="#2AA198" font-family="'Courier'" font-size="16">&quot;4000&quot;</tspan><tspan x="288.047" y="0" fill="#839496" font-family="'Courier'" font-size="16">&gt;&lt;/</tspan><tspan x="316.852" y="0" fill="#268BD2" font-family="'Courier'" font-size="16">svg</tspan><tspan x="345.656" y="0" fill="#839496" font-family="'Courier'" font-size="16">&gt;</tspan></text>
 	<g>
 		<g>
@@ -2099,7 +2091,7 @@
 		<rect x="656" y="2410" opacity="0" fill="#FFFFFF" width="24" height="20"/>
 	</g>
 	<g id="linkRay">
-		<path fill="#FFFF00" d="M676.143,3940.58c0.649-0.532,2.104-1.42,2.909-1.725c0.623-0.229,1.351-0.355,2.026-0.355
+		<path fill="#FFFF00" d="M663.143,3940.58c0.649-0.532,2.104-1.42,2.909-1.725c0.623-0.229,1.351-0.355,2.026-0.355
 			c0.597,0,0.649,0,1.74,0.279c0.208,0.051,0.571,0.127,1.039,0.229c0.961,0.202,1.455,0.533,2.312,1.548
 			c1.767,0.278,1.817,0.305,5.325,0.507c1.454,0.076,2.233,0.203,2.753,0.432c0.441,0.177,0.753,0.66,0.753,1.142
 			c0,0.71-0.572,1.142-1.792,1.344c-0.417,0.052-1.247,0.077-3.117,0.077c-0.597,0-1.351,0-2.233,0
@@ -2109,11 +2101,11 @@
 			c-1.065,0-1.844-0.33-4-1.599c-0.831-0.482-0.961-0.559-1.558-0.787c-0.546,0.533-0.936,0.66-2.183,0.66
 			c-0.728,0-1.038-0.102-1.221-0.406c-0.52-0.913-0.831-2.512-0.831-4.465c0-1.775,0.208-2.766,0.701-3.196
 			c0.208-0.178,0.338-0.229,0.806-0.254c0.831-0.051,0.831-0.051,0.961-0.051c0.675,0,0.883,0.103,1.688,0.862
-			C675.52,3941.062,675.597,3941.013,676.143,3940.58z M673.312,3940.911l-0.494,0.024c-0.052,0-0.104,0-0.156,0
+			C662.52,3941.062,662.597,3941.013,663.143,3940.58z M660.312,3940.911l-0.494,0.024c-0.052,0-0.104,0-0.156,0
 			c-0.441,0-0.597,0.102-0.727,0.381c-0.156,0.406-0.26,1.345-0.26,2.537c0,1.497,0.182,2.562,0.545,3.501
 			c0.156,0.381,0.286,0.456,0.701,0.456c1.3,0,1.559-0.051,1.559-0.304c0-0.076-0.052-0.229-0.233-0.635
 			c-0.26-0.608-0.416-1.674-0.416-2.815c0-1.192,0.104-1.827,0.364-2.588c0.026-0.076,0.052-0.178,0.052-0.229
-			c0-0.178-0.312-0.329-0.649-0.329H673.312z M678.324,3944.184c1.064,0,1.767-0.152,2.442-0.584
+			c0-0.178-0.312-0.329-0.649-0.329H660.312z M665.324,3944.184c1.064,0,1.767-0.152,2.442-0.584
 			c0.856-0.532,1.429-1.04,1.923-1.624c0.311,0.077,0.337,0.077,0.519,0.152c0.312,0.102,0.52,0.179,0.649,0.254
 			c0.155,0.025,0.207,0.076,0.389,0.33c0.494,0.685,1.092,1.04,1.793,1.04c0.468,0,0.779-0.203,0.779-0.508
 			c0-0.278-0.493-1.191-1.092-2.004c-0.753-1.04-1.116-1.269-2.441-1.623c-0.908-0.255-1.844-0.432-2.233-0.432
@@ -2123,20 +2115,20 @@
 			c1.637,0.99,2.623,1.396,3.61,1.446c-1.143-0.862-1.636-1.547-1.636-2.283c0-0.786,0.519-1.319,1.299-1.345
 			c-0.053-0.203-0.078-0.305-0.078-0.432c0-0.685,0.493-1.142,1.324-1.217c-0.104-0.203-0.13-0.254-0.183-0.508
 			c-1.142,0.583-1.272,0.66-1.609,0.762c-0.415,0.126-1.481,0.253-2.001,0.253c-0.57,0-1.012-0.203-1.012-0.481
-			c0-0.178,0.129-0.279,0.337-0.279c0.053,0,0.053,0,0.779,0.076H678.324z M680.013,3947.278c0,0.431,0.416,1.04,1.118,1.599
+			c0-0.178,0.129-0.279,0.337-0.279c0.053,0,0.053,0,0.779,0.076H665.324z M667.013,3947.278c0,0.431,0.416,1.04,1.118,1.599
 			c0.83,0.685,1.427,0.964,2.051,0.964c0.494,0,0.857-0.254,0.857-0.583c0-0.178-0.156-0.406-0.468-0.635
 			c-0.155-0.127-0.155-0.152-1.221-0.762c-0.312-0.177-0.571-0.329-0.831-0.532s-0.155-0.102-0.389-0.33
-			c-0.234-0.228-0.312-0.254-0.469-0.254C680.299,3946.745,680.013,3946.999,680.013,3947.278z M681.208,3945.73
+			c-0.234-0.228-0.312-0.254-0.469-0.254C667.299,3946.745,667.013,3946.999,667.013,3947.278z M668.208,3945.73
 			c0,0.508,0.545,1.015,2.025,1.827c1.013,0.583,1.61,0.812,2.026,0.812c0.441,0,0.857-0.406,0.857-0.837
 			c0-0.305-0.312-0.735-0.65-0.888c-0.727-0.305-2.024-0.964-2.389-1.167c-0.728-0.432-0.806-0.457-1.092-0.457
-			C681.572,3945.021,681.208,3945.351,681.208,3945.73z M686.117,3944.437c-0.416,0-0.909-0.101-1.325-0.278
+			C668.572,3945.021,668.208,3945.351,668.208,3945.73z M673.117,3944.437c-0.416,0-0.909-0.101-1.325-0.278
 			c-0.286-0.127-0.779-0.559-1.064-0.938c-0.261-0.33-0.338-0.406-0.546-0.406c-0.39,0-0.831,0.431-0.831,0.761
 			c0,0.432,0.312,0.838,0.987,1.218c0.908,0.533,1.584,0.862,2.182,1.065c0.649,0.229,0.883,0.279,1.064,0.279
-			c0.494,0,0.961-0.432,0.961-0.913c0-0.33-0.129-0.584-0.52-0.99C686.636,3944.387,686.428,3944.437,686.117,3944.437z
-			 M686.688,3941.367c0.078,0.102,0.156,0.203,0.234,0.33c0.39,0.508,0.623,1.167,0.623,1.648c0.624,0.025,1.144,0.025,1.402,0.025
+			c0.494,0,0.961-0.432,0.961-0.913c0-0.33-0.129-0.584-0.52-0.99C673.636,3944.387,673.428,3944.437,673.117,3944.437z
+			 M673.688,3941.367c0.078,0.102,0.156,0.203,0.234,0.33c0.39,0.508,0.623,1.167,0.623,1.648c0.624,0.025,1.144,0.025,1.402,0.025
 			c0.468,0,0.961-0.025,1.689-0.025h1.896c1.091,0,1.739-0.278,1.739-0.71c0-0.431-0.519-0.71-1.453-0.786l-5.222-0.406
-			L686.688,3941.367z"/>
-		<rect x="671" y="3935" opacity="0" fill="#FFFFFF" width="24" height="20"/>
+			L673.688,3941.367z"/>
+		<rect x="540" y="3932" opacity="0" fill="#FFFFFF" width="142" height="23"/>
 	</g>
 	<g id="example">
 		<path fill="#FFFF00" d="M-34.857,3570.58c0.649-0.532,2.104-1.42,2.909-1.725c0.623-0.229,1.351-0.355,2.026-0.355
