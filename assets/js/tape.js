@@ -46,7 +46,7 @@ Tapes = (function() {
 
   Tapes.prototype.update = function(width, height, y, ratio){
     var _initY = 3250,
-        _endY = 3700,
+        _endY = 4000,
         _y = y / ratio,
         _h = height / ratio,
         _bottom = (_y + _h - _initY) / (_endY - _initY),
