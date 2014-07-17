@@ -579,7 +579,7 @@
 	<text transform="matrix(1 0 0 1 272.8608 97.2871)" fill="#FFFFFF" font-family="'Knewave'" font-size="60">What’s SVG?</text>
 	<text transform="matrix(1 0 0 1 450.9106 798.2666)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">SVG Shape Elements</text>
 	<rect x="221.667" y="138.279" fill="none" width="446" height="98.028"/>
-	<text transform="matrix(1 0 0 1 225.9951 150.4385)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">Scalable Vector Graphics (SVG) is an XML-based vector image</tspan><tspan x="86.348" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">format for two-dimensional graphics.</tspan><tspan x="58.562" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">An SVG image begins with an &lt;svg&gt; element:</tspan></text>
+	<text transform="matrix(1 0 0 1 249.7568 150.4385)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">Scalable Vector Graphics (SVG) is an XML-based vector </tspan><tspan x="40.902" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">imageformat for two-dimensional graphics.</tspan><tspan x="34.801" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">An SVG image begins with an &lt;svg&gt; element:</tspan></text>
 	<text transform="matrix(1 0 0 1 50.5508 1098.5059)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">&lt;g&gt;</text>
 	<g>
 		<rect x="49.413" y="1137.367" fill="none" width="365.587" height="77.633"/>
@@ -592,8 +592,8 @@
 	</g>
 	<text transform="matrix(1 0 0 1 100.2949 2548.459)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">&lt;image&gt;</text>
 	<g>
-		<rect x="99.159" y="2588.319" fill="none" width="400.341" height="34.692"/>
-		<text transform="matrix(1 0 0 1 99.1592 2600.4795)" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">You can add image using &lt;image&gt; element.</text>
+		<rect x="99.159" y="2588.319" fill="none" width="226.841" height="50.181"/>
+		<text transform="matrix(1 0 0 1 99.1592 2600.4795)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">You can add an image using </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">the &lt;image&gt; element.</tspan></text>
 	</g>
 	<text transform="matrix(1 0 0 1 550.8418 2298.2578)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">&lt;pattern&gt;</text>
 	<g>
@@ -602,20 +602,20 @@
 	</g>
 	<text transform="matrix(1 0 0 1 100.9653 2748.5391)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">&lt;clippath&gt;</text>
 	<g>
-		<rect x="99.83" y="2788.397" fill="none" width="400.34" height="148.64"/>
-		<text transform="matrix(1 0 0 1 99.8296 2800.5586)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">SVG elements can contain clipping paths to create </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">clipping masks. These masks are defined using the </tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">&lt;clippath&gt; element tag. The mask is a union of all paths </tspan><tspan x="0" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">defined inside the clippath element.</tspan><tspan x="0" y="100" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">An image can use a clipping mask by assigning the </tspan><tspan x="0" y="125" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">clippath id to the clip-path attribute.</tspan></text>
+		<rect x="99.83" y="2788.397" fill="none" width="363.26" height="148.64"/>
+		<text transform="matrix(1 0 0 1 99.8296 2800.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">SVG elements can contain paths to create clipping </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">masks. These masks are defined using the </tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">&lt;clippath&gt; element tag. The mask is a union of all </tspan><tspan x="0" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">paths defined inside the clippath element.An </tspan><tspan x="0" y="100" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">image can use a clipping mask by assigning the </tspan><tspan x="0" y="125" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">clippath id to the clip-path attribute.</tspan></text>
 	</g>
 	<text transform="matrix(1 0 0 1 100.9653 3298.5391)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">SVG plugins</text>
 	<g>
-		<rect x="99.83" y="3338.397" fill="none" width="500.17" height="49.603"/>
-		<text transform="matrix(1 0 0 1 99.8296 3350.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">There are SVG plugins which control svg element easily like jQuery.</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">The below is some famous plugin you can take a look:</tspan></text>
+		<rect x="99.83" y="3338.397" fill="none" width="545.167" height="49.603"/>
+		<text transform="matrix(1 0 0 1 99.8296 3350.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">There are SVG libraries which can manipulate svg elements just like jQuery </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">can HTML elements.The following are some popular libraries to look at:</tspan></text>
 	</g>
 	<text transform="matrix(1 0 0 1 400.9653 3698.5391)" fill="#FFFFFF" font-family="'Knewave'" font-size="36">Story Build project</text>
 	<text transform="matrix(1 0 0 1 398.9653 3948.7002)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Knewave'" font-size="18">Very thankful to </tspan><tspan x="141.964" y="0" fill="#FFC500" font-family="'Knewave'" font-size="18">RayPatterson</tspan></text>
-	<text transform="matrix(1 0 0 1 692.9209 3948.7002)" fill="#FFFFFF" font-family="'Knewave'" font-size="18">for supervising!</text>
+	<text transform="matrix(1 0 0 1 692.9209 3948.7002)" fill="#FFFFFF" font-family="'Knewave'" font-size="18">for the spell check!</text>
 	<g>
 		<rect x="399.83" y="3738.397" fill="none" width="449.67" height="112.103"/>
-		<text transform="matrix(1 0 0 1 399.8296 3750.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">“Story Build” is a project by Sunjin Kim (lightregularbold.com) </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">and Mayo Tobita (mayognaise) to make stories using very cute </tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">charactors. It’s still on progress but please check the example </tspan><tspan x="0" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">story!</tspan></text>
+		<text transform="matrix(1 0 0 1 399.8296 3750.5566)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">“Story Build” is a project by Sunjin Kim (lightregularbold.com) </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">and Mayo Tobita (mayognaise) to make stories using very cute </tspan><tspan x="0" y="50" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">characters. It’s still a work in progress but please enjoy this </tspan><tspan x="0" y="75" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">short, animated story!</tspan></text>
 	</g>
 	<g>
 		<rect x="99.83" y="3488.554" fill="none" width="349.67" height="134.446"/>
@@ -874,7 +874,7 @@
 	<text transform="matrix(1 0 0 1 365.9966 1881.0322)"><tspan x="0" y="0" fill="#B58900" font-family="'Courier'" font-size="16">path</tspan><tspan x="38.406" y="0" fill="#839496" font-family="'Courier'" font-size="16"> = </tspan><tspan x="67.211" y="0" fill="#B58900" font-family="'Courier'" font-size="16">document</tspan><tspan x="144.023" y="0" fill="#839496" font-family="'Courier'" font-size="16">.</tspan><tspan x="153.625" y="0" fill="#268BD2" font-family="'Courier'" font-size="16">getElementById</tspan><tspan x="288.046" y="0" fill="#839496" font-family="'Courier'" font-size="16">(</tspan><tspan x="297.648" y="0" fill="#2AA198" font-family="'Courier'" font-size="16">&quot;guide&quot;</tspan><tspan x="364.859" y="0" fill="#839496" font-family="'Courier'" font-size="16">);</tspan><tspan x="0" y="25" fill="#B58900" font-family="'Courier'" font-size="16">ball</tspan><tspan x="38.406" y="25" fill="#839496" font-family="'Courier'" font-size="16"> = </tspan><tspan x="67.211" y="25" fill="#B58900" font-family="'Courier'" font-size="16">document</tspan><tspan x="144.023" y="25" fill="#839496" font-family="'Courier'" font-size="16">.</tspan><tspan x="153.625" y="25" fill="#268BD2" font-family="'Courier'" font-size="16">getElementById</tspan><tspan x="288.046" y="25" fill="#839496" font-family="'Courier'" font-size="16">(</tspan><tspan x="297.648" y="25" fill="#2AA198" font-family="'Courier'" font-size="16">&quot;ball&quot;</tspan><tspan x="355.257" y="25" fill="#839496" font-family="'Courier'" font-size="16">);</tspan><tspan x="0" y="50" fill="#B58900" font-family="'Courier'" font-size="16">total</tspan><tspan x="48.008" y="50" fill="#839496" font-family="'Courier'" font-size="16"> = </tspan><tspan x="76.812" y="50" fill="#B58900" font-family="'Courier'" font-size="16">path</tspan><tspan x="115.218" y="50" fill="#839496" font-family="'Courier'" font-size="16">.</tspan><tspan x="124.82" y="50" fill="#268BD2" font-family="'Courier'" font-size="16">getTotalLength</tspan><tspan x="259.242" y="50" fill="#839496" font-family="'Courier'" font-size="16">();</tspan><tspan x="0" y="75" fill="#B58900" font-family="'Courier'" font-size="16">count</tspan><tspan x="48.008" y="75" fill="#839496" font-family="'Courier'" font-size="16"> = </tspan><tspan x="76.812" y="75" fill="#2AA198" font-family="'Courier'" font-size="16">0</tspan><tspan x="86.414" y="75" fill="#839496" font-family="'Courier'" font-size="16">;</tspan><tspan x="0" y="100" fill="#268BD2" font-family="'Courier'" font-size="16">setInterval</tspan><tspan x="105.617" y="100" fill="#839496" font-family="'Courier'" font-size="16">(</tspan><tspan x="115.218" y="100" fill="#268BD2" font-family="'Courier'" font-size="16">function</tspan><tspan x="192.031" y="100" fill="#839496" font-family="'Courier'" font-size="16">(){</tspan><tspan x="15" y="125" fill="#B58900" font-family="'Courier'" font-size="16">point</tspan><tspan x="63.008" y="125" fill="#839496" font-family="'Courier'" font-size="16"> = </tspan><tspan x="91.812" y="125" fill="#B58900" font-family="'Courier'" font-size="16">path</tspan><tspan x="130.218" y="125" fill="#839496" font-family="'Courier'" font-size="16">.</tspan><tspan x="139.82" y="125" fill="#268BD2" font-family="'Courier'" font-size="16">getPointAtLength</tspan><tspan x="293.445" y="125" fill="#839496" font-family="'Courier'" font-size="16">(</tspan><tspan x="303.046" y="125" fill="#B58900" font-family="'Courier'" font-size="16">count</tspan><tspan x="351.054" y="125" fill="#839496" font-family="'Courier'" font-size="16">++ % </tspan><tspan x="399.062" y="125" fill="#B58900" font-family="'Courier'" font-size="16">total</tspan><tspan x="447.07" y="125" fill="#839496" font-family="'Courier'" font-size="16">);</tspan><tspan x="15" y="150" fill="#B58900" font-family="'Courier'" font-size="16">ball</tspan><tspan x="53.406" y="150" fill="#839496" font-family="'Courier'" font-size="16">.</tspan><tspan x="63.008" y="150" fill="#268BD2" font-family="'Courier'" font-size="16">setAttribute</tspan><tspan x="178.226" y="150" fill="#839496" font-family="'Courier'" font-size="16">(</tspan><tspan x="187.828" y="150" fill="#2AA198" font-family="'Courier'" font-size="16">&quot;cx&quot;</tspan><tspan x="226.234" y="150" fill="#839496" font-family="'Courier'" font-size="16">, </tspan><tspan x="245.437" y="150" fill="#B58900" font-family="'Courier'" font-size="16">point</tspan><tspan x="293.445" y="150" fill="#839496" font-family="'Courier'" font-size="16">.</tspan><tspan x="303.046" y="150" fill="#268BD2" font-family="'Courier'" font-size="16">x</tspan><tspan x="312.648" y="150" fill="#839496" font-family="'Courier'" font-size="16">);</tspan><tspan x="15" y="175" fill="#B58900" font-family="'Courier'" font-size="16">ball</tspan><tspan x="53.406" y="175" fill="#839496" font-family="'Courier'" font-size="16">.</tspan><tspan x="63.008" y="175" fill="#268BD2" font-family="'Courier'" font-size="16">setAttribute</tspan><tspan x="178.226" y="175" fill="#839496" font-family="'Courier'" font-size="16">(</tspan><tspan x="187.828" y="175" fill="#2AA198" font-family="'Courier'" font-size="16">&quot;cy&quot;</tspan><tspan x="226.234" y="175" fill="#839496" font-family="'Courier'" font-size="16">, </tspan><tspan x="245.437" y="175" fill="#B58900" font-family="'Courier'" font-size="16">point</tspan><tspan x="293.445" y="175" fill="#839496" font-family="'Courier'" font-size="16">.</tspan><tspan x="303.046" y="175" fill="#268BD2" font-family="'Courier'" font-size="16">y</tspan><tspan x="312.648" y="175" fill="#839496" font-family="'Courier'" font-size="16">);</tspan><tspan x="0" y="200" fill="#839496" font-family="'Courier'" font-size="16">}, </tspan><tspan x="28.805" y="200" fill="#2AA198" font-family="'Courier'" font-size="16">33</tspan><tspan x="48.008" y="200" fill="#839496" font-family="'Courier'" font-size="16">);</tspan></text>
 	<g>
 		<rect x="449.765" y="838.134" fill="none" width="350.235" height="55.866"/>
-		<text transform="matrix(1 0 0 1 449.7646 850.2939)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">The element tags below is the basic shapes to</tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">draw in the svg element:</tspan></text>
+		<text transform="matrix(1 0 0 1 449.7646 850.2939)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">The element tags below are the basic shapes </tspan><tspan x="0" y="25" fill="#FFFFFF" font-family="'OpenSans-Light'" font-size="16">todraw in the svg element:</tspan></text>
 	</g>
 	<g>
 		<g>
@@ -1611,7 +1611,7 @@
 		<rect x="364" y="2912" opacity="0" fill="#FFFFFF" width="24" height="20"/>
 	</g>
 	<g id="linkImage">
-		<path fill="#FFC500" d="M419.143,2591.58c0.649-0.532,2.104-1.42,2.909-1.725c0.623-0.229,1.351-0.355,2.026-0.355
+		<path fill="#FFC500" d="M265.143,2615.58c0.649-0.532,2.104-1.42,2.909-1.725c0.623-0.229,1.351-0.355,2.026-0.355
 			c0.597,0,0.649,0,1.74,0.279c0.208,0.051,0.571,0.127,1.039,0.229c0.961,0.202,1.455,0.533,2.312,1.548
 			c1.767,0.278,1.817,0.305,5.325,0.507c1.454,0.076,2.233,0.203,2.753,0.432c0.441,0.177,0.753,0.66,0.753,1.142
 			c0,0.71-0.572,1.142-1.792,1.344c-0.417,0.052-1.247,0.077-3.117,0.077c-0.597,0-1.351,0-2.233,0
@@ -1621,11 +1621,11 @@
 			c-1.065,0-1.844-0.33-4-1.599c-0.831-0.482-0.961-0.559-1.558-0.787c-0.546,0.533-0.936,0.66-2.183,0.66
 			c-0.728,0-1.038-0.102-1.221-0.406c-0.52-0.913-0.831-2.512-0.831-4.465c0-1.775,0.208-2.766,0.701-3.196
 			c0.208-0.178,0.338-0.229,0.806-0.254c0.831-0.051,0.831-0.051,0.961-0.051c0.675,0,0.883,0.103,1.688,0.862
-			C418.52,2592.062,418.597,2592.013,419.143,2591.58z M416.312,2591.911l-0.494,0.024c-0.052,0-0.104,0-0.156,0
+			C264.52,2616.062,264.597,2616.013,265.143,2615.58z M262.312,2615.911l-0.494,0.024c-0.052,0-0.104,0-0.156,0
 			c-0.441,0-0.597,0.102-0.727,0.381c-0.156,0.406-0.26,1.345-0.26,2.537c0,1.497,0.182,2.562,0.545,3.501
 			c0.156,0.381,0.286,0.456,0.701,0.456c1.3,0,1.559-0.051,1.559-0.304c0-0.076-0.052-0.229-0.233-0.635
 			c-0.26-0.608-0.416-1.674-0.416-2.815c0-1.192,0.104-1.827,0.364-2.588c0.026-0.076,0.052-0.178,0.052-0.229
-			c0-0.178-0.312-0.329-0.649-0.329H416.312z M421.324,2595.184c1.064,0,1.767-0.152,2.442-0.584
+			c0-0.178-0.312-0.329-0.649-0.329H262.312z M267.324,2619.184c1.064,0,1.767-0.152,2.442-0.584
 			c0.856-0.532,1.429-1.04,1.923-1.624c0.311,0.077,0.337,0.077,0.519,0.152c0.312,0.102,0.52,0.179,0.649,0.254
 			c0.155,0.025,0.207,0.076,0.389,0.33c0.494,0.685,1.092,1.04,1.793,1.04c0.468,0,0.779-0.203,0.779-0.508
 			c0-0.278-0.493-1.191-1.092-2.004c-0.753-1.04-1.116-1.269-2.441-1.623c-0.908-0.255-1.844-0.432-2.233-0.432
@@ -1635,20 +1635,20 @@
 			c1.637,0.99,2.623,1.396,3.61,1.446c-1.143-0.862-1.636-1.547-1.636-2.283c0-0.786,0.519-1.319,1.299-1.345
 			c-0.053-0.203-0.078-0.305-0.078-0.432c0-0.685,0.493-1.142,1.324-1.217c-0.104-0.203-0.13-0.254-0.183-0.508
 			c-1.142,0.583-1.272,0.66-1.609,0.762c-0.415,0.126-1.481,0.253-2.001,0.253c-0.57,0-1.012-0.203-1.012-0.481
-			c0-0.178,0.129-0.279,0.337-0.279c0.053,0,0.053,0,0.779,0.076H421.324z M423.013,2598.278c0,0.431,0.416,1.04,1.118,1.599
+			c0-0.178,0.129-0.279,0.337-0.279c0.053,0,0.053,0,0.779,0.076H267.324z M269.013,2622.278c0,0.431,0.416,1.04,1.118,1.599
 			c0.83,0.685,1.427,0.964,2.051,0.964c0.494,0,0.857-0.254,0.857-0.583c0-0.178-0.156-0.406-0.468-0.635
 			c-0.155-0.127-0.155-0.152-1.221-0.762c-0.312-0.177-0.571-0.329-0.831-0.532s-0.155-0.102-0.389-0.33
-			c-0.234-0.228-0.312-0.254-0.469-0.254C423.299,2597.745,423.013,2597.999,423.013,2598.278z M424.208,2596.73
+			c-0.234-0.228-0.312-0.254-0.469-0.254C269.299,2621.745,269.013,2621.999,269.013,2622.278z M270.208,2620.73
 			c0,0.508,0.545,1.015,2.025,1.827c1.013,0.583,1.61,0.812,2.026,0.812c0.441,0,0.857-0.406,0.857-0.837
 			c0-0.305-0.312-0.735-0.65-0.888c-0.727-0.305-2.024-0.964-2.389-1.167c-0.728-0.432-0.806-0.457-1.092-0.457
-			C424.572,2596.021,424.208,2596.351,424.208,2596.73z M429.117,2595.437c-0.416,0-0.909-0.101-1.325-0.278
+			C270.572,2620.021,270.208,2620.351,270.208,2620.73z M275.117,2619.437c-0.416,0-0.909-0.101-1.325-0.278
 			c-0.286-0.127-0.779-0.559-1.064-0.938c-0.261-0.33-0.338-0.406-0.546-0.406c-0.39,0-0.831,0.431-0.831,0.761
 			c0,0.432,0.312,0.838,0.987,1.218c0.908,0.533,1.584,0.862,2.182,1.065c0.649,0.229,0.883,0.279,1.064,0.279
-			c0.494,0,0.961-0.432,0.961-0.913c0-0.33-0.129-0.584-0.52-0.99C429.636,2595.387,429.428,2595.437,429.117,2595.437z
-			 M429.688,2592.367c0.078,0.102,0.156,0.203,0.234,0.33c0.39,0.508,0.623,1.167,0.623,1.648c0.624,0.025,1.144,0.025,1.402,0.025
+			c0.494,0,0.961-0.432,0.961-0.913c0-0.33-0.129-0.584-0.52-0.99C275.636,2619.387,275.428,2619.437,275.117,2619.437z
+			 M275.688,2616.367c0.078,0.102,0.156,0.203,0.234,0.33c0.39,0.508,0.623,1.167,0.623,1.648c0.624,0.025,1.144,0.025,1.402,0.025
 			c0.468,0,0.961-0.025,1.689-0.025h1.896c1.091,0,1.739-0.278,1.739-0.71c0-0.431-0.519-0.71-1.453-0.786l-5.222-0.406
-			L429.688,2592.367z"/>
-		<rect x="414" y="2586" opacity="0" fill="#FFFFFF" width="24" height="20"/>
+			L275.688,2616.367z"/>
+		<rect x="260" y="2610" opacity="0" fill="#FFFFFF" width="24" height="20"/>
 	</g>
 	<g id="linkElements">
 		<path fill="#FFC500" d="M822.822,3048.957c0.547-0.637,1.825-1.765,2.565-2.203c0.573-0.334,1.269-0.585,1.934-0.703
@@ -2011,7 +2011,7 @@
 		<rect x="354" y="3587" opacity="0" fill="#FFFFFF" width="24" height="20"/>
 	</g>
 	<g id="linkStory">
-		<path fill="#FFC500" d="M453.143,3817.58c0.649-0.532,2.104-1.42,2.909-1.725c0.623-0.229,1.351-0.355,2.026-0.355
+		<path fill="#FFC500" d="M566.143,3817.58c0.649-0.532,2.104-1.42,2.909-1.725c0.623-0.229,1.351-0.355,2.026-0.355
 			c0.597,0,0.649,0,1.74,0.279c0.208,0.051,0.571,0.127,1.039,0.229c0.961,0.202,1.455,0.533,2.312,1.548
 			c1.767,0.278,1.817,0.305,5.325,0.507c1.454,0.076,2.233,0.203,2.753,0.432c0.441,0.177,0.753,0.66,0.753,1.142
 			c0,0.71-0.572,1.142-1.792,1.344c-0.417,0.052-1.247,0.077-3.117,0.077c-0.597,0-1.351,0-2.233,0
@@ -2021,11 +2021,11 @@
 			c-1.065,0-1.844-0.33-4-1.599c-0.831-0.482-0.961-0.559-1.558-0.787c-0.546,0.533-0.936,0.66-2.183,0.66
 			c-0.728,0-1.038-0.102-1.221-0.406c-0.52-0.913-0.831-2.512-0.831-4.465c0-1.775,0.208-2.766,0.701-3.196
 			c0.208-0.178,0.338-0.229,0.806-0.254c0.831-0.051,0.831-0.051,0.961-0.051c0.675,0,0.883,0.103,1.688,0.862
-			C452.52,3818.062,452.597,3818.013,453.143,3817.58z M450.312,3817.911l-0.494,0.024c-0.052,0-0.104,0-0.156,0
+			C565.52,3818.062,565.597,3818.013,566.143,3817.58z M563.312,3817.911l-0.494,0.024c-0.052,0-0.104,0-0.156,0
 			c-0.441,0-0.597,0.102-0.727,0.381c-0.156,0.406-0.26,1.345-0.26,2.537c0,1.497,0.182,2.562,0.545,3.501
 			c0.156,0.381,0.286,0.456,0.701,0.456c1.3,0,1.559-0.051,1.559-0.304c0-0.076-0.052-0.229-0.233-0.635
 			c-0.26-0.608-0.416-1.674-0.416-2.815c0-1.192,0.104-1.827,0.364-2.588c0.026-0.076,0.052-0.178,0.052-0.229
-			c0-0.178-0.312-0.329-0.649-0.329H450.312z M455.324,3821.184c1.064,0,1.767-0.152,2.442-0.584
+			c0-0.178-0.312-0.329-0.649-0.329H563.312z M568.324,3821.184c1.064,0,1.767-0.152,2.442-0.584
 			c0.856-0.532,1.429-1.04,1.923-1.624c0.311,0.077,0.337,0.077,0.519,0.152c0.312,0.102,0.52,0.179,0.649,0.254
 			c0.155,0.025,0.207,0.076,0.389,0.33c0.494,0.685,1.092,1.04,1.793,1.04c0.468,0,0.779-0.203,0.779-0.508
 			c0-0.278-0.493-1.191-1.092-2.004c-0.753-1.04-1.116-1.269-2.441-1.623c-0.908-0.255-1.844-0.432-2.233-0.432
@@ -2035,20 +2035,20 @@
 			c1.637,0.99,2.623,1.396,3.61,1.446c-1.143-0.862-1.636-1.547-1.636-2.283c0-0.786,0.519-1.319,1.299-1.345
 			c-0.053-0.203-0.078-0.305-0.078-0.432c0-0.685,0.493-1.142,1.324-1.217c-0.104-0.203-0.13-0.254-0.183-0.508
 			c-1.142,0.583-1.272,0.66-1.609,0.762c-0.415,0.126-1.481,0.253-2.001,0.253c-0.57,0-1.012-0.203-1.012-0.481
-			c0-0.178,0.129-0.279,0.337-0.279c0.053,0,0.053,0,0.779,0.076H455.324z M457.013,3824.278c0,0.431,0.416,1.04,1.118,1.599
+			c0-0.178,0.129-0.279,0.337-0.279c0.053,0,0.053,0,0.779,0.076H568.324z M570.013,3824.278c0,0.431,0.416,1.04,1.118,1.599
 			c0.83,0.685,1.427,0.964,2.051,0.964c0.494,0,0.857-0.254,0.857-0.583c0-0.178-0.156-0.406-0.468-0.635
 			c-0.155-0.127-0.155-0.152-1.221-0.762c-0.312-0.177-0.571-0.329-0.831-0.532s-0.155-0.102-0.389-0.33
-			c-0.234-0.228-0.312-0.254-0.469-0.254C457.299,3823.745,457.013,3823.999,457.013,3824.278z M458.208,3822.73
+			c-0.234-0.228-0.312-0.254-0.469-0.254C570.299,3823.745,570.013,3823.999,570.013,3824.278z M571.208,3822.73
 			c0,0.508,0.545,1.015,2.025,1.827c1.013,0.583,1.61,0.812,2.026,0.812c0.441,0,0.857-0.406,0.857-0.837
 			c0-0.305-0.312-0.735-0.65-0.888c-0.727-0.305-2.024-0.964-2.389-1.167c-0.728-0.432-0.806-0.457-1.092-0.457
-			C458.572,3822.021,458.208,3822.351,458.208,3822.73z M463.117,3821.437c-0.416,0-0.909-0.101-1.325-0.278
+			C571.572,3822.021,571.208,3822.351,571.208,3822.73z M576.117,3821.437c-0.416,0-0.909-0.101-1.325-0.278
 			c-0.286-0.127-0.779-0.559-1.064-0.938c-0.261-0.33-0.338-0.406-0.546-0.406c-0.39,0-0.831,0.431-0.831,0.761
 			c0,0.432,0.312,0.838,0.987,1.218c0.908,0.533,1.584,0.862,2.182,1.065c0.649,0.229,0.883,0.279,1.064,0.279
-			c0.494,0,0.961-0.432,0.961-0.913c0-0.33-0.129-0.584-0.52-0.99C463.636,3821.387,463.428,3821.437,463.117,3821.437z
-			 M463.688,3818.367c0.078,0.102,0.156,0.203,0.234,0.33c0.39,0.508,0.623,1.167,0.623,1.648c0.624,0.025,1.144,0.025,1.402,0.025
+			c0.494,0,0.961-0.432,0.961-0.913c0-0.33-0.129-0.584-0.52-0.99C576.636,3821.387,576.428,3821.437,576.117,3821.437z
+			 M576.688,3818.367c0.078,0.102,0.156,0.203,0.234,0.33c0.39,0.508,0.623,1.167,0.623,1.648c0.624,0.025,1.144,0.025,1.402,0.025
 			c0.468,0,0.961-0.025,1.689-0.025h1.896c1.091,0,1.739-0.278,1.739-0.71c0-0.431-0.519-0.71-1.453-0.786l-5.222-0.406
-			L463.688,3818.367z"/>
-		<rect x="448" y="3812" opacity="0" fill="#FFFFFF" width="24" height="20"/>
+			L576.688,3818.367z"/>
+		<rect x="561" y="3812" opacity="0" fill="#FFFFFF" width="24" height="20"/>
 	</g>
 	<g id="linkPattern">
 		<path fill="#FFC500" d="M661.143,2415.58c0.649-0.532,2.104-1.42,2.909-1.725c0.623-0.229,1.351-0.355,2.026-0.355
