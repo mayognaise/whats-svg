@@ -509,7 +509,8 @@
 						<use xlink:href="#SVGID_5_"  overflow="visible"/>
 					</clipPath>
 					<g clip-path="url(#SVGID_6_)">
-						<image overflow="visible" width="200" height="200" xlink:href="imgs/dust.png"  transform="matrix(0.5 0 0 0.5 400 1025)">
+						
+							<image overflow="visible" width="200" height="200" xlink:href="assets/imgs/dust.png"  transform="matrix(0.5 0 0 0.5 400 1025)">
 						</image>
 					</g>
 				</g>
