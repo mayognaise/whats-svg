@@ -28,7 +28,7 @@ Pattern = (function() {
       });
       pattern.append('image')
         .attr({
-          'x': 0, 'y': 0, 
+          'x': 0, 'y': 0,
           'width': w, 'height': h,
           'xlink:href': src
         });

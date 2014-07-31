@@ -48,7 +48,7 @@ var _xml, _json, _width, _height, _y,
         g.classed('show', true);
       }
       updateHighlighting(info.highlighting? info.highlighting(el) : el.node().outerHTML);
-    }, 
+    },
     out = function(el){
       g.text('');
       g.classed('show', false);
