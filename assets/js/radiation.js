@@ -2,7 +2,7 @@ var Radiation;
 
 Radiation = (function() {
   function Radiation(selector) {
-    this.el = d3.select(selector);
+    this.el = d3Select(selector);
     this.arr = [];
     this.side = /Left/.test(selector)? 'left': 'right';
     this.init();

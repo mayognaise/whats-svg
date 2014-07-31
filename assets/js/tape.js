@@ -2,7 +2,7 @@ var Tape;
 
 Tape = (function() {
   function Tape(selector, vect, incline) {
-    this.el = d3.select(selector);
+    this.el = d3Select(selector);
     this.vect = vect;
     this.incline = incline;
     this.init();

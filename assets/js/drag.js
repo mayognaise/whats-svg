@@ -2,7 +2,8 @@ var Drag;
 
 Drag = (function() {
   function Drag() {
-    this.g = d3.select('#drag');
+    this.g = d3Select('#drag');
+    test = this.g;
     this.stars = this.g.select('#stars');
     this.init();
   }

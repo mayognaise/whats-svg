@@ -2,7 +2,7 @@ var Pattern;
 
 Pattern = (function() {
   function Pattern() {
-    this.g = d3.select('#dogeRight');
+    this.g = d3Select('#dogeRight');
     this.init();
   }
 

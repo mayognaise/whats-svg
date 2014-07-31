@@ -2,7 +2,7 @@ var CatMask;
 
 CatMask = (function() {
   function CatMask() {
-    this.g = d3.select('#catMaskG');
+    this.g = d3Select('#catMaskG');
     this.init();
   }
 

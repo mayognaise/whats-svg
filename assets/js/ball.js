@@ -3,16 +3,20 @@ var Ball;
 Ball = (function() {
   function Ball() {
     this.speed = 600;
-    this.g = d3.select('#ballG');
+    // this.g = d3Select('#ballG');
+    this.g = d3Select('#ballG');
     this.el = this.g.select('circle');
     this.others = this.g.select('g');
     this.shadow = this.others.select('path');
     this.pattern = this.others.select('image');
-    this.gHole = d3.select('#hole');
+    // this.gHole = d3Select('#hole');
+    this.gHole = d3Select('#hole');
     this.hole = this.gHole.select('ellipse');
-    this.$guideRotation = d3.select('#guide'); // circulation guide
+    // this.$guideRotation = d3Select('#guide'); // circulation guide
+    this.$guideRotation = d3Select('#guide');
     this.guideRotation = this.$guideRotation.node();
-    this.guideWalk = d3.select('#ballAnimeGuideWalk').node();
+    // this.guideWalk = d3Select('#ballAnimeGuideWalk').node();
+    this.guideWalk = d3Select('#ballAnimeGuideWalk').node();
     this.init();
   }
 

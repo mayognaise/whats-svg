@@ -159,7 +159,7 @@ var _data = {
         var node = el.node(),
             parentNode = node.parentElement;
         if(parentNode.id === 'drag'){
-          var stars = d3.select('#stars'),
+          var stars = d3Select('#stars'),
               starHTML = stars.node().outerHTML;
               arr = [];
           stars.selectAll('polygon').each(function(){

@@ -86,7 +86,7 @@ var _xml, _json, _width, _height, _y,
   },
   addLinks = function(){
     _data.links.forEach(function(d){
-      var el = d3.select(d.selector),
+      var el = d3Select(d.selector),
           url = d.url;
       el.on('click', function(){
         window.open(url, '_blank');
@@ -140,7 +140,7 @@ var _xml, _json, _width, _height, _y,
   setup = function(){
     document.body.appendChild(_xml.documentElement);
     adjustFonts(['tspan', 'text']);
-    _$highlight = d3.select('#highlight');
+    _$highlight = d3Select('#highlight');
     _$svg = d3.select('svg');
     _svgWidth = parseInt(_$svg.attr('width'));
     _svgHeight = parseInt(_$svg.attr('height'));
