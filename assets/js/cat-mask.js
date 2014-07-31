@@ -15,12 +15,13 @@ CatMask = (function() {
         height = Math.ceil(bbox.height),
         src = 'http://placekitten.com/' + width + '/' + height + '',
         img = new Image();
-    this.g.append('defs').append('clipPath')
+    this.g.append('defs').append('svg:clipPath')
       .attr({
         id: maskId
       })
-      .html(clipPath.node().outerHTML);
-    clipPath.remove();
+      .append('path')
+      .attr('d', clipPath.attr('d'));
+    // clipPath.remove();
     img.onload = function(){
       that.g.append('image')
         .attr({
