@@ -6,12 +6,12 @@ var gulp = require('gulp'),
   open = require("gulp-open");
 
 gulp.task('webpack-dev-server', function (callback) {
-  var myConfig = Object.create(webpackConfig);
-  myConfig.devtool = 'eval';
-  myConfig.debug = true;
+  var config = Object.create(webpackConfig);
+  config.devtool = 'eval';
+  config.debug = true;
 
-  new WebpackDevServer(webpack(myConfig), {
-    publicPath: '/' + myConfig.output.publicPath,
+  new WebpackDevServer(webpack(config), {
+    publicPath: '/' + config.output.publicPath,
     stats: {
       colors: true
     }
@@ -24,8 +24,8 @@ gulp.task('webpack-dev-server', function (callback) {
 });
 
 gulp.task('build', function (callback) {
-  var myConfig = Object.create(webpackConfig);
-  myConfig.plugins = myConfig.plugins.concat(
+  var config = Object.create(webpackConfig);
+  config.plugins = config.plugins.concat(
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
@@ -35,7 +35,7 @@ gulp.task('build', function (callback) {
     new webpack.optimize.UglifyJsPlugin()
   );
 
-  webpack(myConfig, function (err, stats) {
+  webpack(config, function (err, stats) {
     if (err) throw new gutil.PluginError('build', err);
     gutil.log('[build]', stats.toString({
       colors: true
