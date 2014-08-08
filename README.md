@@ -24,6 +24,6 @@ Introduction of SVG.
 
 Please download free fonts from here:
 
-* [knewave](http://www.dafont.com/knewave.font)
+* [Knewave](http://www.dafont.com/knewave.font)
 * [Open Sans](http://www.fontsquirrel.com/fonts/open-sans)
 
