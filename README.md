@@ -7,15 +7,17 @@ Introduction of SVG.
 
 ###First install dependencies
 
-```npm install```
+`npm install`
+
 
 ###For development
 
-```gulp```
+`gulp`
+
 
 ###For production
 
-```gulp build```
+`gulp build`
 
 
 ## Opening Illustrator file
