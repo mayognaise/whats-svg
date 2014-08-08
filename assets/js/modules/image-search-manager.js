@@ -2,27 +2,15 @@
  *
  * Image manager for Google Image Search
  * https://developers.google.com/image-search/v1/devguide
- * 
- * 
+ *
+ *
  */
-
-var ImageSearchManager;
-
-ImageSearchManager = (function() {
-  function ImageSearchManager() {
+module.exports = (function(){
+  function ImageSearchManager(){
     this.imageSearch = undefined;
     this.isReady = false;
     this.init();
   }
-
-  ImageSearchManager.prototype.init = function(){
-    var that = this;
-    // google.load('search', '1');
-    google.setOnLoadCallback(function(){
-      that.imageSearch = new google.search.ImageSearch();
-      that.isReady = true;
-    });
-  };
 
   ImageSearchManager.prototype.onSearchComplete = function(callback){
     if(this.imageSearch.results && this.imageSearch.results.length > 0){
@@ -79,9 +67,14 @@ ImageSearchManager = (function() {
     google.search.Search.getBranding(div, orientation);
   };
 
-
-  // ImageSearchManager.prototype.fnc = function(){};
-
+  ImageSearchManager.prototype.init = function(){
+    var that = this;
+    // google.load('search', '1');
+    google.setOnLoadCallback(function(){
+      that.imageSearch = new google.search.ImageSearch();
+      that.isReady = true;
+    });
+  };
   return ImageSearchManager;
 
 })();

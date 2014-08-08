@@ -1,8 +1,6 @@
-var Radiation;
-
-Radiation = (function() {
+module.exports = (function(){
   function Radiation(selector) {
-    this.el = d3Select(selector);
+    this.el = $(selector);
     this.arr = [];
     this.side = /Left/.test(selector)? 'left': 'right';
     this.init();

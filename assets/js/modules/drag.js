@@ -1,9 +1,6 @@
-var Drag;
-
-Drag = (function() {
+module.exports = (function(){
   function Drag() {
-    this.g = d3Select('#drag');
-    test = this.g;
+    this.g = $('#drag');
     this.stars = this.g.select('#stars');
     this.init();
   }

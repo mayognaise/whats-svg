@@ -1,4 +1,4 @@
-var _data = {
+module.exports = {
   "links": [
     {
       "selector": "#linkRect",
@@ -159,7 +159,7 @@ var _data = {
         var node = el.node(),
             parentNode = node.parentElement;
         if(parentNode.id === 'drag'){
-          var stars = d3Select('#stars'),
+          var stars = $('#stars'),
               starHTML = stars.node().outerHTML;
               arr = [];
           stars.selectAll('polygon').each(function(){
@@ -361,5 +361,3 @@ var _data = {
     }
   ]
 };
-
-

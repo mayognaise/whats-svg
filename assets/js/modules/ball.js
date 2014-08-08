@@ -1,22 +1,16 @@
-var Ball;
-
-Ball = (function() {
+module.exports = (function(){
   function Ball() {
     this.speed = 600;
-    // this.g = d3Select('#ballG');
-    this.g = d3Select('#ballG');
+    this.g = $('#ballG');
     this.el = this.g.select('circle');
     this.others = this.g.select('g');
     this.shadow = this.others.select('path');
     this.pattern = this.others.select('image');
-    // this.gHole = d3Select('#hole');
-    this.gHole = d3Select('#hole');
+    this.gHole = $('#hole');
     this.hole = this.gHole.select('ellipse');
-    // this.$guideRotation = d3Select('#guide'); // circulation guide
-    this.$guideRotation = d3Select('#guide');
+    this.$guideRotation = $('#guide');
     this.guideRotation = this.$guideRotation.node();
-    // this.guideWalk = d3Select('#ballAnimeGuideWalk').node();
-    this.guideWalk = d3Select('#ballAnimeGuideWalk').node();
+    this.guideWalk = $('#ballAnimeGuideWalk').node();
     this.init();
   }
 

@@ -5,6 +5,7 @@ body{
   font-size: 16px;
   font-weight: 300;
   background-image: url(../imgs/stardust.png);
+  background-size: 399px;
   margin: 0;
   padding: 0;
   color: white;
@@ -27,10 +28,11 @@ body{
   -ms-transition: bottom .3s;
   -o-transition: bottom .3s;
   transition: bottom .3s;
+  &.show{
+    bottom: 0;
+  }
 }
-.highlight.show{
-  bottom: 0;
-}
+
 code{
   white-space: pre-wrap !important;
 }
@@ -112,23 +114,23 @@ code{
   -ms-transition: opacity .3s;
   -o-transition: opacity .3s;
   transition: opacity .3s;
-}
-.info.show{
-  opacity: .9;
-}
-.info .info-text{
-  fill: #ff00ff;
-  font-weight: 400;
-}
-.info .info-guide-circle{
-  fill: #ff00ff;
-}
-.info .info-guide-line,
-.info .info-guide-rect,
-.info .info-guide-polyline,
-.info .info-guide-polygon,
-.info .guideline{
-  stroke: #ff00ff;
-  stroke-width: 1;
-  fill: none;
+  &.show{
+    opacity: .9;
+  }
+  .info-text{
+    fill: #ff00ff;
+    font-weight: 400;
+  }
+  .info-guide-circle{
+    fill: #ff00ff;
+  }
+  .info-guide-line,
+  .info-guide-rect,
+  .info-guide-polyline,
+  .info-guide-polygon,
+  .guideline{
+    stroke: #ff00ff;
+    stroke-width: 1;
+    fill: none;
+  }
 }
