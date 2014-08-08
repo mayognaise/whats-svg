@@ -1,0 +1,136 @@
+body{
+  background-color: #444349;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  background-image: url(../imgs/stardust.png);
+  background-size: 399px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow-x: hidden;
+}
+
+#bg{
+  display: none;
+}
+
+.highlight{
+  position: fixed;
+  bottom: -300px;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+  z-index: 1;
+  -webkit-transition: bottom .3s;
+  -moz-transition: bottom .3s;
+  -ms-transition: bottom .3s;
+  -o-transition: bottom .3s;
+  transition: bottom .3s;
+  &.show{
+    bottom: 0;
+  }
+}
+
+code{
+  white-space: pre-wrap !important;
+}
+
+/* ---------- fonts ---------- */
+.Knewave{
+  font-family: 'Knewave' !important;
+  font-weight: 400;
+}
+.OpenSansLight-Italic{
+  font-family: 'Open Sans' !important;
+  font-style: italic;
+  font-weight: 300;
+}
+.OpenSans, .OpenSans-Light{
+  font-family: 'Open Sans' !important;
+  font-weight: 300;
+  fill: #ddd !important;
+}
+.OpenSans-Bold{
+  font-family: 'Open Sans' !important;
+  font-weight: 700;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+#polyGroup *{
+  fill: rgba(0,0,0,.3);
+}
+
+#links *{
+  cursor: pointer;
+}
+
+#imageProjector image{
+  cursor: pointer;
+}
+
+/* ---------- ingore pointer event ---------- */
+.info,
+#grids,
+#tape1, #tape2, #tape3, #tape4,
+#noPointEvent,
+#objFront *,
+#drag *:not(circle),
+#ballG g,
+#numV *, #numH *{
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* ---------- dot line animation ---------- */
+*[stroke-dasharray="2,2"]{
+  -webkit-animation: dash 1s infinite linear;
+  -moz-animation: dash 1s infinite linear;
+  -ms-animation: dash 1s infinite linear;
+  -o-animation: dash 1s infinite linear;
+  animation: dash 1s infinite linear;
+}
+
+@-webkit-keyframes dash { to { stroke-dashoffset: 4; } }
+@-moz-keyframes dash { to { stroke-dashoffset: 4; } }
+@-ms-keyframes dash { to { stroke-dashoffset: 4; } }
+@-o-keyframes dash { to { stroke-dashoffset: 4; } }
+@keyframes dash { to { stroke-dashoffset: 4; } }
+
+
+/* ---------- info ---------- */
+.info{
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+  &.show{
+    opacity: .9;
+  }
+  .info-text{
+    fill: #ff00ff;
+    font-weight: 400;
+  }
+  .info-guide-circle{
+    fill: #ff00ff;
+  }
+  .info-guide-line,
+  .info-guide-rect,
+  .info-guide-polyline,
+  .info-guide-polygon,
+  .guideline{
+    stroke: #ff00ff;
+    stroke-width: 1;
+    fill: none;
+  }
+}
