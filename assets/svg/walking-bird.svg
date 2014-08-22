@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="504.791px" height="436.297px" viewBox="0 0 504.791 436.297" enable-background="new 0 0 504.791 436.297"
+	 xml:space="preserve">
+<g id="right_leg" display="none">
+	<path display="inline" fill="#2F2737" d="M265.092,337.471v66.354c0,9.072,2.541,16.062,7.55,20.77
+		c6.03,5.662,14.239,6.688,17.944,6.836v4.867h-30.362v-98.825h4.868V337.471z"/>
+</g>
+<g id="left_leg" display="none">
+	<path display="inline" fill="#2F2737" d="M242.942,337.471v66.354c0,9.072-2.54,16.062-7.55,20.77
+		c-6.029,5.662-14.238,6.688-17.943,6.836v4.867h30.363v-98.825h-4.87V337.471L242.942,337.471z"/>
+</g>
+<g id="back" display="none">
+	<polygon display="inline" fill="#ED5344" points="234.397,262.333 270.401,262.333 252.399,170.602 	"/>
+</g>
+<g id="body_fly" display="none">
+	<path display="inline" fill="#2F2737" d="M268.399,262.333l-16-7.649l-16,7.649l-90.856-66.906v58.702h0.004
+		c0.301,109.752,99.539,106.107,105.916,105.764c6.373,0.354,105.608,3.988,105.909-105.764h0.005v-58.702L268.399,262.333z"/>
+</g>
+<g id="body_after" display="none">
+	<path display="inline" fill="#2F2737" d="M268.399,251.324l-16-4.648l-16,4.648l-90.856-55.897v58.702h0.004
+		c0.301,109.752,99.539,106.107,105.916,105.764c6.373,0.354,105.608,3.988,105.909-105.764h0.005v-58.702L268.399,251.324z"/>
+</g>
+<g id="body" display="none">
+	<path display="inline" fill="#2F2737" d="M268.399,250.323l-16-4.648l-16,4.648l-90.856-54.896v8.663h0.004
+		c-0.004,73.615,99.539,76.084,105.916,75.74c6.373,0.354,105.914-2.125,105.909-75.74h0.005v-8.663L268.399,250.323z"/>
+</g>
+<g id="left_wing_after" display="none">
+	<path display="inline" fill="#2F2737" d="M252.394,253.45L252.394,253.45h0.008L0.013,1.059
+		C0.011,223.542,167.823,253.45,252.394,253.45z"/>
+</g>
+<g id="left_wing" display="none">
+	<path display="inline" fill="#2F2737" d="M252.394,253.45L252.394,253.45h0.008L0.013,1.059
+		C0.076,8.376,247.712,253.45,252.394,253.45z"/>
+</g>
+<g id="right_wing_after" display="none">
+	<path display="inline" fill="#2F2737" d="M504.791,1.059L252.402,253.45h0.008l0,0C336.98,253.45,504.793,223.542,504.791,1.059z"
+		/>
+</g>
+<g id="right_wing" display="none">
+	<path display="inline" fill="#2F2737" d="M504.791,1.059L252.402,253.45h0.008l0,0C257.092,253.45,504.728,8.376,504.791,1.059z"/>
+</g>
+<g id="right_leaf" display="none">
+	<path display="inline" fill="#4D3E50" d="M252.394,231.443l0.003,20.955L504.791,0C282.075,0,255.004,170.918,252.394,231.443z"/>
+</g>
+<g id="left_leaf" display="none">
+	<path display="inline" fill="#4D3E50" d="M252.394,231.443v20.955L0,0C222.715,0,249.787,170.918,252.394,231.443z"/>
+</g>
+<g id="mouth" display="none">
+	<polygon display="inline" fill="#EE5444" points="362.789,297.958 305.854,297.958 305.854,240.838 	"/>
+</g>
+<g id="white_eye" display="none">
+	<ellipse display="inline" fill="#FFFFFF" cx="307.403" cy="269.293" rx="29.577" ry="28.664"/>
+</g>
+<g id="black_eye" display="none">
+	<path display="inline" fill="#2F2737" d="M307.407,286.012c9.521,0,17.247-7.481,17.247-16.715c0-9.236-7.729-16.719-17.247-16.719
+		c-9.531,0-17.258,7.48-17.258,16.719C290.149,278.529,297.876,286.012,307.407,286.012"/>
+</g>
+<g id="dot" display="none">
+	<path display="inline" fill="#FFFFFF" d="M247.494,252.297c0-2.688,2.178-4.867,4.869-4.867l0,0c2.688,0,4.869,2.18,4.869,4.867
+		l0,0c0,2.689-2.182,4.869-4.869,4.869l0,0C249.672,257.167,247.494,254.988,247.494,252.297L247.494,252.297z"/>
+</g>
+</svg>

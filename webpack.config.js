@@ -3,7 +3,10 @@ var webpack = require('webpack');
 
 module.exports = {
   // cache: true,
-  entry: ['./main'],
+  entry: {
+    main: './main',
+    test: './test'
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     publicPath: 'dist/',

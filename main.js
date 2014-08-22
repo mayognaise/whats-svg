@@ -1,5 +1,6 @@
 require('./assets/css/solarized_dark.css');
 require('./assets/scss/index.scss');
+require('./assets/scss/walking-bird.scss');
 
 var queue = require('queue-async'),
     Stage = require('./assets/js/modules/stage.js');

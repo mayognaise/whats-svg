@@ -6,6 +6,7 @@ var data = require('./data'),
   Drag = require('./drag'),
   Ball = require('./ball'),
   Radiation = require('./radiation'),
+  WalkingBird = require('./walking-bird'),
   Highlight = require('./highlighten');
 
 module.exports = (function(){
@@ -60,6 +61,7 @@ module.exports = (function(){
       if(this.radiationLeft) this.radiationLeft.update(y);
       if(this.radiationRight) this.radiationRight.update(y);
       if(this.tapes) this.tapes.update(width, height, y, ratio);
+      if(this.walkingBird) this.walkingBird.update(height, y, ratio);
     }
   };
   Stage.prototype.onresize = function(){
@@ -81,6 +83,11 @@ module.exports = (function(){
     this.ball = new Ball();
     this.radiationLeft = new Radiation('#radiationLeft');
     this.radiationRight = new Radiation('#radiationRight');
+    this.$svg.append('g').attr('id', 'walkingbird');
+    this.walkingBird = new WalkingBird('walkingbird', {
+      scale: 0.355,
+      translate: [160, 3800]
+    });
     this.tapes = new Tapes();
     new Drag();
     new Doge();
@@ -93,6 +100,9 @@ module.exports = (function(){
     var that = this;
     window.onresize = function(){that.onresize();};
     window.onscroll = function(){that.onscroll();};
+    if(navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)){
+      document.addEventListener('touchmove', function(){that.onscroll();});
+    }
   };
 
   // setter / getter

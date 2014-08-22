@@ -1,0 +1,92 @@
+svg{
+  .walking-bird{
+    #left_leaf{transform-origin: 252px 252px;}
+    #right_leaf{transform-origin: 252px 252px;}
+    #left_leg{transform-origin: 247px 337px;}
+    #right_leg{transform-origin: 260px 337px;}
+    #white_eye{transform-origin: 307px 269px;}
+    #black_eye{transform-origin: 307px 269px;}
+    #mouth{transform-origin: 305px 297px;}
+    &.init{
+      *{
+        display: block !important;
+        visibility: hidden !important;
+      }
+    }
+    &.anim{
+      // transition: transform 300ms;
+      #left_leaf, #right_leaf, #white_eye, #black_eye, #mouth, #left_leg, #right_leg{
+        transition: transform 300ms;
+      }
+      #black_eye, #mouth{
+        transition-delay: 100ms;
+      }
+    }
+    &.innactive{
+      #left_leaf, #right_leaf, #white_eye, #black_eye, #mouth, #left_leg, #right_leg, #body_after, #left_wing_after, #right_wing_after, #dot{
+        display: block !important;
+      }
+    }
+    &.active{
+      #left_leaf{
+        display: block !important;
+        transform: rotate(-135deg);
+      }
+      #right_leaf{
+        display: block !important;
+        transform: rotate(135deg);
+      }
+      #white_eye, #black_eye{
+        display: block !important;
+        transform: scale(0);
+      }
+      #mouth{
+        display: block !important;
+        transform: scale(0) rotate(180deg);
+      }
+      #left_leg, #right_leg{
+        transform: scale(0.5) translateY(-50px);
+      }
+    }
+    &.open-leaf{
+      #left_leaf, #right_leaf{
+        transform: rotate(0deg);
+      }
+    }
+    &.show-wing{
+      #left_wing, #right_wing{
+        display: block !important;
+      }
+    }
+    &.show-body{
+      #body, #dot{
+        display: block !important;
+      }
+      #white_eye, #black_eye{
+        transform: scale(1);
+      }
+      #mouth{
+        transform: scale(1) rotate(0deg);
+      }
+    }
+    &.ready-leg{
+      #left_leg, #right_leg{
+        display: block !important;
+      }
+    }
+    &.show-leg{
+      #left_leg, #right_leg{
+        transform: translateY(0);
+      }
+    }
+    &.open-leg{
+      // transform: translateY(20px);
+      #left_leg{
+        transform: rotate(45deg);
+      }
+      #right_leg{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
